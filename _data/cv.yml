@@ -2,96 +2,93 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Xiang Li
+    # - name: Date of Birth
+    #   value: September 1996
     - name: Languages
-      value: English, German
+      value: English, Chinese
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: School of Mathematical Sciences, Peking University, Beijing, China
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Major in Statistics
+        - Supervised by Prof. <a href="http://www.math.pku.edu.cn/teachers/zhzhang/" target="_blank">Zhihua Zhang</a>.
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
+    - title: Bachelor of Science
+      institution: Peking University, Beijing, China
+      year: 2018
+      description: 
+        - Main degree in Statistics, School of Mathematical Sciences
+        - Dual degree in Economics, National School of Development
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Visiting Phd. student
+      institution: Department of Statistical Science, University of Toronto
+      year: Feb. 2022 - Feb. 2023
+      description: 
+        - Work with Prof. <a href="https://sites.google.com/view/qsun" target="_blank">Qiang Sun</a>. 
+        - Focus on robust reinforcement learning and deep learning theory
+    - title: Participant of the Machine Learning Summer Schools (<a href="http://mlss.tuebingen.mpg.de/2020/" target="_blank">MLSS 2020</a>)
+      institution:  Max Planck Institute for Intelligent Systems
+      year: 28 Jun. - 10 Jul. 2020
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Remote participation due to Covid19
+        # - Description 2.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Intern
+      institution: <a href="https://en.megvii.com/" target="_blank">Megvii Technology Limited</a>, Beijing
+      year: Jun. 2018 - Nov. 2018
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+    - title: Intern
+      institution: <a href="https://www.tusimple.com/" target="_blank">TuSimple</a> - Autonomous Driving Technology, Beijing
+      year: Mar. 2018 - May. 2018
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Optimization
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Develop provably optimal methods for (non-)convex and stochastic optimization for structured problems.
+    - title: Statistics
       items:
-        - Description 1.
-        - Description 2.
+        - Propose practical methods for structural estimation and online statistical inference.
+        - Deepen theoretical understanding of the interaction between optimization and sampling.
+    - title: Sequential Decision Making
+      items: 
+        - Develop computationally efficient online algorithms that balance the exploration-exploitation trade-off in problems such as bandit or reinforcement learning.
+    - title: Trustworthy Machine Learning
+      items: 
+        - Understand the trade-offs between accuracy, privacy, robustness, and fairness.
+        - Design efficient algorithms with provable guarantees for large-scale problems.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Body-building, Tennis, Music, Animation.

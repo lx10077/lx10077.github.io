@@ -24,6 +24,14 @@
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
+
+        {%- if entry.spotlight -%}
+          <span class="award badge">Spotlight</span>
+        {%- endif -%}
+
+        {%- if entry.oral -%}
+          <span class="award badge">Oral presentaton</span>
+        {%- endif -%}
         </div>
 
         <!-- Entry bib key -->
