@@ -29,5 +29,3 @@ The fields I worked in include
 - Online statistical inference
 - Reinforcement learning
 - Federated Learning
-
-I'm on the 2023 job market and looking for a post-doc position.
