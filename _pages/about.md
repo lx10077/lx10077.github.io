@@ -28,4 +28,4 @@ The fields I worked in include
 - Stochastic approximation 
 - Online statistical inference
 - Reinforcement learning
-- Federated Learning
+- Federated learning
