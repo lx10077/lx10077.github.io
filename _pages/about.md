@@ -9,17 +9,15 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Science Building 1</p>
-    <p>Haidian District, Beijing</p>
+    <p>Shoot by the Weiming Lake</p>
+    <p>Peking University, Beijing</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-
-I am a last-year PhD student at <a href='http://english.math.pku.edu.cn/'>School of Mathematical Sciences</a>, <a href='https://english.pku.edu.cn/'>Peking University</a>. 
-I am fortunate to be advised by Prof. <a href="http://www.math.pku.edu.cn/teachers/zhzhang/" target="_blank">Zhihua Zhang</a>.
+I obtained my Ph.D. degree at <a href='http://english.math.pku.edu.cn/'>School of Mathematical Sciences</a>, <a href='https://english.pku.edu.cn/'>Peking University</a> in 2023, advised by Prof. <a href="http://www.math.pku.edu.cn/teachers/zhzhang/" target="_blank">Zhihua Zhang</a>.
 
 My research interests focus on the intersection between theoretical statistics, stochastic optimization, and machine learning.
 My general research aims to propose computationally efficient algorithms for structural problems with provable guarantees from both non-asymptotic and asymptotic perspectives.
@@ -27,5 +25,5 @@ My general research aims to propose computationally efficient algorithms for str
 The fields I worked in include
 - Stochastic approximation 
 - Online statistical inference
-- Reinforcement learning
+- Online decision making
 - Federated learning
