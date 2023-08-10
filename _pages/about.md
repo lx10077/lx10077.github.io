@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Shoot by Weiming Lake</p>
+    <p>By Weiming Lake</p>
     <p>Peking University</p>
 
 news: true  # includes a list of news items
