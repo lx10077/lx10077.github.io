@@ -18,7 +18,14 @@
   - firstname: ["Xiangyu"]
     url: http://xiangyuchang.github.io/
 
-  
 "Jordan":
   - firstname: ["Michael I"]
     url: http://people.eecs.berkeley.edu/~jordan/
+
+"Chen"
+  - firstname: ["Xinyun"]
+    url: https://myweb.cuhk.edu.cn/chenxinyun
+
+"Liang"
+  - firstname: ["Jiadong"]
+    url: https://faketomatoes.github.io/
