@@ -22,10 +22,10 @@
   - firstname: ["Michael I"]
     url: http://people.eecs.berkeley.edu/~jordan/
 
-"Chen"
+"Chen":
   - firstname: ["Xinyun"]
     url: https://myweb.cuhk.edu.cn/chenxinyun
 
-"Liang"
+"Liang":
   - firstname: ["Jiadong"]
     url: https://faketomatoes.github.io/
