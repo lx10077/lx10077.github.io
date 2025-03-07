@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-12-9 15:59:00-0400
+date: 2024-5-29 15:59:00-0400
 inline: true
 ---
 
-Attend NeurIPS 2023. 
+Attend [2024 IMS-NUS workshop](https://ims.nus.edu.sg/events/statistical-machine-learninghdd/) and present our recent work on watermark.

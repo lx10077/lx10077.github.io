@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2023-8-12 15:59:00-0400
+date: 2023-9-26 15:59:00-0400
 inline: true
 ---
 
-Start postdoc in Upenn.
-
+Attend 2023 Allerton conference at the University of Illinois.

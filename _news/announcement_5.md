@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-9-26 15:59:00-0400
+date: 2023-12-9 15:59:00-0400
 inline: true
 ---
 
-Attend Allerton Conf. 
+Attend 2023 NeurIPS. Great to visit New Orleans again!

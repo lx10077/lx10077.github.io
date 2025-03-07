@@ -36,6 +36,19 @@
   transition: all 0.2s ease-in-out;
 }
 
+.news table tr th,
+.news table tr td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.news table {
+  line-height: 1.2;
+  font-size: 0.9rem;
+}
+
 /* Light mode (when body has class 'light-mode') */
 body.light-mode .bibliography .links .btn {
   color: #333; /* Dark text */
