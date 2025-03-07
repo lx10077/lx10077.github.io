@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Xiang
 middle_name: 
 last_name: Li
-email: lx10077@pku.edu.cn
+email: lx10077@upenn.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Xiang Li's personal homepage
 footer_text: >
@@ -51,7 +51,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -278,13 +278,14 @@ scholar:
   details_link: Details
 
   query: "@*"
+  filter: true
 
 badges: # Display different badges for your pulications
   altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
   dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, oral, spotlight]
+filtered_bibtex_keywords: [keywords, topic, abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, oral, spotlight]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 5  # leave blank to always show all authors

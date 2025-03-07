@@ -1,0 +1,61 @@
+
+.profile {
+  margin: 5px; /* Adds space around the whole avatar block */
+  display: flex;
+  align-items: center; /* Vertically center if text is next to it */
+  gap: 10px; /* Space between avatar and address, if present */
+}
+
+.profile img {
+  width: auto; /* or a fixed width if you prefer, e.g., 300px */
+  height: 250px;
+  border-radius: 0; /* remove the circle */
+  object-fit: contain; /* optional, helps maintain the aspect ratio */
+}
+
+.profile {
+  max-width: none !important;
+  width: auto;
+}
+
+.profile .address {
+  margin-top: 10px; /* Optional: control spacing if you have address text */
+}
+
+/* Base button style */
+.bibliography .links .btn {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 20px; /* Oval shape */
+  margin: 2px 4px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Light mode (when body has class 'light-mode') */
+body.light-mode .bibliography .links .btn {
+  color: #333; /* Dark text */
+  border-color: #333; /* Dark border */
+}
+
+body.light-mode .bibliography .links .btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+  border-color: #000;
+}
+
+/* Dark mode (when body has class 'dark-mode') */
+body.dark-mode .bibliography .links .btn {
+  color: #ccc; /* Light text */
+  border-color: #ccc; /* Light border */
+}
+
+body.dark-mode .bibliography .links .btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: #fff;
+}

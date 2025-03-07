@@ -70,25 +70,25 @@
 #       items: 
 #         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Optimization
-      items: 
-        - Develop provably optimal methods for (non-)convex and stochastic optimization for structured problems.
-    - title: Statistics
-      items:
-        - Propose practical methods for structural estimation and online statistical inference.
-        - Deepen theoretical understanding of the interaction between optimization and sampling.
-    - title: Sequential Decision Making
-      items: 
-        - Develop computationally efficient online algorithms that balance the exploration-exploitation trade-off in problems such as bandit or reinforcement learning.
-    - title: Trustworthy Machine Learning
-      items: 
-        - Understand the trade-offs between accuracy, privacy, robustness, and fairness.
-        - Design efficient algorithms with provable guarantees for large-scale problems.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Statistical Foundations for LLMs
+#       items: 
+#         - Explore the statistical and algorithmic principles underlying large language models (LLMs), with the current focus on designing efficient watermarking techniques and understanding their theoretical limits.
+#     - title: Statistics
+#       items:
+#         - Propose practical methods for structural estimation and online statistical inference.
+#         - Deepen theoretical understanding of the interaction between optimization and sampling.
+#     - title: Sequential Decision Making
+#       items: 
+#         - Develop computationally efficient online algorithms that balance the exploration-exploitation trade-off in problems such as bandit or reinforcement learning.
+#     - title: Trustworthy Machine Learning
+#       items: 
+#         - Understand the trade-offs between accuracy, privacy, robustness, and fairness.
+#         - Design efficient algorithms with provable guarantees for large-scale problems.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Body-building, Tennis, Music, Animation.
+    - <u>Hobbies:</u> Tennis, Music, Animation.
