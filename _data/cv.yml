@@ -11,7 +11,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: Ph.D. in Statistics
       institution: School of Mathematical Sciences, Peking University, Beijing, China
       year: 2023
       description:
@@ -21,16 +21,22 @@
         #   contents:
         #     - Sub-description 1.
         #     - Sub-description 2.
-    - title: Bachelor of Science
+    - title: Bachelor of Science & Bachelor of Arts
       institution: Peking University, Beijing, China
       year: 2018
       description: 
-        - Main degree in Statistics, School of Mathematical Sciences
-        - Dual degree in Economics, National School of Development
+        - B.S. in Statistics, School of Mathematical Sciences
+        - B.A. in Economics, National School of Development
 
 - title: Experience
   type: time_table
   contents:
+    - title: Postdoctoral Researcher
+      institution: University of Pennsylvania
+      year: Aug. 2023 - Now
+      description: 
+        - Work with Prof. <a href="https://www.weijie-su.com/" target="_blank">Weijie Su</a> and Prof. <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p8939931" target="_blank">Qi Long</a>.
+
     - title: Visiting Phd. student
       institution: Department of Statistical Science, University of Toronto
       year: Feb. 2022 - Feb. 2023
@@ -59,17 +65,26 @@
 #       year: 2015-now
 #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items: 
-#         - Nobel Prize in Physics 
-#         - Matteucci Medal
-#     - year: 2029
-#       items: 
-#         - Max Planck Medal
-
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2018, 2023 
+      items: 
+        - Outstanding Graduates, Peking University
+    - year: 2018, 2020, 2021
+      items: 
+        - President Scholarship for Excellent Ph.D Student, Peking University
+    - year: 2019
+      items: 
+        - Travel Award, NeurIPS 2019
+        - Travel Award, AAAI 2020
+    - year: 2017, 2019
+      items: 
+        - National Scholarship, China
+    - year: 2016
+      items: 
+        - First prize in National Undergraduate Mathematical Modeling Contest, China
+      
 # - title: Academic Interests
 #   type: nested_list
 #   contents:
