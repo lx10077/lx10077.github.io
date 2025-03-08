@@ -97,3 +97,26 @@ body.dark-mode .bibliography .links .btn:hover {
   color: #fff;
   border-color: #fff;
 }
+
+
+/* ========== Spotlight & Oral ========== */
+
+/* Light Mode (default) */
+.spotlight {
+  color: #cc4c4c; /* Soft warm red */
+  font-weight: bold;
+}
+
+.oral {
+  color: #cc4c4c; /* Soft warm red */
+  font-weight: bold;
+}
+
+/* Dark Mode */
+body.dark-mode .spotlight {
+  color: #ff7070; /* Lighter red for dark mode */
+}
+
+body.dark-mode .oral {
+  color: #ff7070; /* Lighter red for dark mode */
+}
