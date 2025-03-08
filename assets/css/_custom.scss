@@ -1,28 +1,25 @@
-
+/* ========== PROFILE (Avatar on About Page) ========== */
 .profile {
   margin: 5px; /* Adds space around the whole avatar block */
   display: flex;
   align-items: center; /* Vertically center if text is next to it */
   gap: 10px; /* Space between avatar and address, if present */
-}
-
-.profile img {
-  width: auto; /* or a fixed width if you prefer, e.g., 300px */
-  height: 250px;
-  border-radius: 0; /* remove the circle */
-  object-fit: contain; /* optional, helps maintain the aspect ratio */
-}
-
-.profile {
   max-width: none !important;
   width: auto;
 }
 
-.profile .address {
-  margin-top: 10px; /* Optional: control spacing if you have address text */
+.profile img {
+  width: auto; /* or a fixed width if preferred, e.g., 250px */
+  height: 250px; /* Keep a fixed height */
+  border-radius: 0; /* Remove circular cropping */
+  object-fit: contain; /* Ensures the full image is visible */
 }
 
-/* Base button style */
+.profile .address {
+  margin-top: 10px; /* Adjust space between avatar and address */
+}
+
+/* ========== BIBLIOGRAPHY (Research Buttons) ========== */
 .bibliography .links .btn {
   display: inline-block;
   padding: 3px 10px;
@@ -36,6 +33,51 @@
   transition: all 0.2s ease-in-out;
 }
 
+/* ========== SHOW MORE (Matches Date Style) ========== */
+#show-more-row th {
+  text-align: left !important; /* Align with date */
+  padding-top: 2px !important; /* Reduce spacing */
+  padding-bottom: 2px !important; /* Reduce spacing */
+  font-weight: bold; /* Match date font */
+  font-size: 0.9rem; /* Same as date text */
+}
+
+.show-more-btn {
+  display: inline-block; /* Ensure it's treated like inline text */
+  font-size: 0.9rem; /* Match date font size */
+  font-weight: normal; /* Keep it non-bold like date */
+  background: none;
+  border: none;
+  color: #333; /* Ensures good visibility in light mode */
+  cursor: pointer;
+  text-decoration: underline; /* Mimic hyperlink styling */
+  transition: color 0.2s ease-in-out;
+  margin-top: 2px; /* Reduce top margin */
+  margin-bottom: 2px;
+}
+
+/* Hover effect */
+.show-more-btn:hover {
+  color: #0056b3; /* Slightly darker on hover */
+  text-decoration: none;
+}
+
+/* ========== DARK MODE FIX ========== */
+body.dark-mode .show-more-btn {
+  color: #bbb !important; /* Match date color in dark mode */
+}
+
+body.dark-mode .show-more-btn:hover {
+  color: #ddd !important;
+}
+
+/* ========== NEWS SECTION (More Compact Layout) ========== */
+.news table {
+  line-height: 1.2;
+  font-size: 0.9rem;
+  border-collapse: collapse; /* Ensures consistent spacing */
+}
+
 .news table tr th,
 .news table tr td {
   padding-top: 2px;
@@ -44,27 +86,10 @@
   padding-right: 8px;
 }
 
-.news table {
-  line-height: 1.2;
-  font-size: 0.9rem;
-}
-
-/* Light mode (when body has class 'light-mode') */
-body.light-mode .bibliography .links .btn {
-  color: #333; /* Dark text */
-  border-color: #333; /* Dark border */
-}
-
-body.light-mode .bibliography .links .btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: #000;
-  border-color: #000;
-}
-
-/* Dark mode (when body has class 'dark-mode') */
+/* ========== DARK MODE STYLES ========== */
 body.dark-mode .bibliography .links .btn {
-  color: #ccc; /* Light text */
-  border-color: #ccc; /* Light border */
+  color: #ccc;
+  border-color: #ccc;
 }
 
 body.dark-mode .bibliography .links .btn:hover {
