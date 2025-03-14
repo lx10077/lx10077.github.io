@@ -74,10 +74,15 @@
     - year: 2018, 2020, 2021
       items: 
         - President Scholarship for Excellent Ph.D Student, Peking University
+    - year: 2021
+      items:
+        - Outstanding reviewer in NeurIPS 2021, top 8%
+    - year: 2020
+      items: 
+        - Travel Award, AAAI 2020
     - year: 2019
       items: 
         - Travel Award, NeurIPS 2019
-        - Travel Award, AAAI 2020
     - year: 2017, 2019
       items: 
         - National Scholarship, China
@@ -93,7 +98,7 @@
 #         - Explore the statistical and algorithmic principles underlying large language models (LLMs), with the current focus on designing efficient watermarking techniques and understanding their theoretical limits.
 #     - title: Statistics
 #       items:
-#         - Propose practical methods for structural estimation and online statistical inference.
+#         - Propose practiacal methods for structural estimation and online statistical inference.
 #         - Deepen theoretical understanding of the interaction between optimization and sampling.
 #     - title: Sequential Decision Making
 #       items: 
