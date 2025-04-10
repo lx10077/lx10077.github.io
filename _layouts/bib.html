@@ -129,26 +129,26 @@
         {%- endif -%}
 
         <!-- Add a comma before "Oral" or "Spotlight" if the entry type is not empty -->
-        {% assign comma_needed = false %}
+        <!-- {% assign comma_needed = false %}
         {%- if entrytype != "" -%}
           {% assign comma_needed = true %}
-        {%- endif -%}
+        {%- endif -%} -->
 
-        {%- if entry.spotlight -%}
+        <!-- {%- if entry.spotlight -%}
           {%- if comma_needed -%}
             {%- capture entrytype -%}{{ entrytype }}, <span class="spotlight">Spotlight</span>{%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}<span class="spotlight">Spotlight</span>{%- endcapture -%}
           {%- endif -%}
-        {%- endif -%}
+        {%- endif -%} -->
 
-        {%- if entry.oral -%}
+        <!-- {%- if entry.oral -%}
           {%- if comma_needed -%}
             {%- capture entrytype -%}{{ entrytype }}, <span class="oral">Oral Presentation</span>{%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}<span class="oral">Oral Presentation</span>{%- endcapture -%}
           {%- endif -%}
-        {%- endif -%}
+        {%- endif -%} -->
 
         {%- if entry.month -%}
           {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
@@ -158,7 +158,12 @@
         {%- endif -%}
 
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        <!-- {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%} -->
+        {%- capture periodical -%}
+          {{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}
+          {{ entrymonth }}{{ entryyear }}
+          {%- if entry.award -%}, <span class="award-label">{{ entry.award }}</span>{%- endif -%}
+        {%- endcapture -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>

@@ -6,7 +6,7 @@
     # - name: Date of Birth
     #   value: September 1996
     - name: Languages
-      value: English, Chinese
+      value: Chinese, English
 
 - title: Education
   type: time_table
@@ -68,6 +68,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025 
+      items: 
+        - IMS New Researcher Travel Award
     - year: 2018, 2023 
       items: 
         - Outstanding Graduates, Peking University

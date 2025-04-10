@@ -99,8 +99,7 @@ body.dark-mode .bibliography .links .btn:hover {
   border-color: #fff;
 }
 
-
-/* ========== Spotlight & Oral ========== */
+/* ========== Spotlight & Oral & Award ========== */
 
 /* Light Mode (default) */
 .spotlight {
@@ -110,6 +109,11 @@ body.dark-mode .bibliography .links .btn:hover {
 
 .oral {
   color: #cc4c4c; /* Soft warm red */
+  font-weight: bold;
+}
+
+.award-label {
+  color: #b03a2e; /* A deeper red for contrast */
   font-weight: bold;
 }
 
