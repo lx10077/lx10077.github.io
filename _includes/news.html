@@ -15,7 +15,8 @@
       <!-- Display the first 'news_limit' news items -->
       {% for item in news limit: news_limit %} 
         <tr class="news-item">
-          <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+          <!-- <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th> -->
+          <th scope="row" class="news-date">{{ item.date | date: "%b %-d, %Y" }}</th>
           <td>
             {% if item.inline -%} 
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -29,7 +30,8 @@
       <!-- Hidden News Section -->
       {% for item in news offset: news_limit %}
         <tr class="news-item hidden-news" style="display: none;">
-          <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+          <!-- <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th> -->
+          <th scope="row" class="news-date">{{ item.date | date: "%b %-d, %Y" }}</th>
           <td>
             {% if item.inline -%} 
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
