@@ -120,3 +120,41 @@ body.dark-mode .show-more-btn:hover { color: #ddd; }
   text-decoration: none;
 }
 .author a:hover { text-decoration: underline; }
+
+
+/* --- Bibliography: use custom bullets that follow text color --- */
+
+/* 1) Neutralize browser numbering/bullets & left indent */
+ol.bibliography,
+ul.bibliography,
+.bibliography ol,
+.bibliography ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 1.5em !important;
+}
+
+/* 2) Create our own bullet; aligns with the title */
+ol.bibliography > li,
+ul.bibliography > li,
+.bibliography > li,
+.bibliography li {
+  position: relative;
+  padding-left: 1em;   /* ← 加大缩进，留空间给 bullet */
+  margin: 0 0 0.6rem 0;  /* entry 间距 */
+}
+
+/* 3) The bullet itself; inherits current text color automatically */
+ol.bibliography > li::before,
+ul.bibliography > li::before,
+.bibliography > li::before,
+.bibliography li::before {
+  content: "•";
+  position: absolute;
+  left: 0em;           /* ← bullet 往右推一点，不会贴边 */
+  top: 0.25em;           /* 垂直微调，保证和文字对齐 */
+  color: currentColor;   /* bullet 跟文字颜色保持一致 (light/dark 自适应) */
+  font-weight: 700;      /* 粗体 bullet */
+  font-size: 1.1em;      /* 稍大于正文 */
+  line-height: 1;
+}
