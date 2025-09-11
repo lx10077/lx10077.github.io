@@ -93,6 +93,16 @@ body.dark-mode .show-more-btn:hover { color: #ddd; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* 小屏幕: 允许标题换行 (防止被截断) */
+@media (max-width: 600px) {
+  .title-row .title {
+    white-space: normal;   /* 可以多行 */
+    text-overflow: clip;   /* 不显示 ... */
+    overflow: visible;     /* 内容完整显示 */
+  }
+}
+
 .title-row .title-links {
   margin-left: auto;
   display: inline-flex;
