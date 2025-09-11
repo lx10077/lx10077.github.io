@@ -1,34 +1,29 @@
 /* ========== PROFILE (Avatar on About Page) ========== */
 .profile {
-  margin: 5px; /* Adds space around the whole avatar block */
+  margin: 5px;
   display: flex;
-  align-items: center; /* Vertically center if text is next to it */
-  gap: 10px; /* Space between avatar and address, if present */
-  max-width: none !important;
-  width: auto;
+  align-items: center;
+  gap: 10px;
 }
 
 .profile img {
-  width: auto; /* or a fixed width if preferred, e.g., 250px */
-  height: 250px; /* Keep a fixed height */
-  border-radius: 0; /* Remove circular cropping */
-  object-fit: contain; /* Ensures the full image is visible */
+  height: 250px;
+  width: auto;
+  border-radius: 0;
+  object-fit: contain;
 }
 
-.profile .address {
-  margin-top: 10px; /* Adjust space between avatar and address */
-}
+.profile .address { margin-top: 10px; }
 
 /* ========== BIBLIOGRAPHY (Research Buttons) ========== */
 .bibliography .links .btn {
   display: inline-block;
   padding: 3px 10px;
   font-size: 0.75rem;
-  // font-weight: 500;
-  font-weight: normal; /* Make text not bold */
+  font-weight: normal;
   background-color: transparent;
   border: 1px solid;
-  border-radius: 20px; /* Oval shape */
+  border-radius: 20px;
   margin: 2px 4px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -36,94 +31,40 @@
 
 /* ========== SHOW MORE (Matches Date Style) ========== */
 #show-more-row th {
-  text-align: left !important; /* Align with date */
-  padding-top: 2px !important; /* Reduce spacing */
-  padding-bottom: 2px !important; /* Reduce spacing */
-  font-weight: bold; /* Match date font */
-  font-size: 0.9rem; /* Same as date text */
+  text-align: left !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .show-more-btn {
-  display: inline-block; /* Ensure it's treated like inline text */
-  font-size: 0.9rem; /* Match date font size */
-  font-weight: normal; /* Keep it non-bold like date */
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: normal;
   background: none;
   border: none;
-  color: #333; /* Ensures good visibility in light mode */
+  color: #333;
   cursor: pointer;
-  text-decoration: underline; /* Mimic hyperlink styling */
+  text-decoration: underline;
   transition: color 0.2s ease-in-out;
-  margin-top: 2px; /* Reduce top margin */
-  margin-bottom: 2px;
+  margin: 2px 0;
 }
-
-/* Hover effect */
-.show-more-btn:hover {
-  color: #0056b3; /* Slightly darker on hover */
-  text-decoration: none;
-}
+.show-more-btn:hover { color: #0056b3; text-decoration: none; }
 
 /* ========== DARK MODE FIX ========== */
-body.dark-mode .show-more-btn {
-  color: #bbb !important; /* Match date color in dark mode */
-}
-
-body.dark-mode .show-more-btn:hover {
-  color: #ddd !important;
-}
+body.dark-mode .show-more-btn { color: #bbb; }
+body.dark-mode .show-more-btn:hover { color: #ddd; }
 
 /* ========== NEWS SECTION (More Compact Layout) ========== */
 .news table {
   line-height: 1.2;
   font-size: 0.9rem;
-  border-collapse: collapse; /* Ensures consistent spacing */
+  border-collapse: collapse;
 }
-
-.news table tr th,
-.news table tr td {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-/* ========== DARK MODE STYLES ========== */
-body.dark-mode .bibliography .links .btn {
-  color: #ccc;
-  border-color: #ccc;
-}
-
-body.dark-mode .bibliography .links .btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border-color: #fff;
-}
-
-/* ========== Spotlight & Oral & Award ========== */
-
-/* Light Mode (default) */
-.spotlight {
-  color: #cc4c4c; /* Soft warm red */
-  font-weight: bold;
-}
-
-.oral {
-  color: #cc4c4c; /* Soft warm red */
-  font-weight: bold;
-}
-
-.award-label {
-  color: #b03a2e; /* A deeper red for contrast */
-  font-weight: bold;
-}
-
-/* Dark Mode */
-body.dark-mode .spotlight {
-  color: #ff7070; /* Lighter red for dark mode */
-}
-
-body.dark-mode .oral {
-  color: #ff7070; /* Lighter red for dark mode */
+.news table th,
+.news table td {
+  padding: 2px 8px;
 }
 
 /* ========== FIX NEWS DATE WRAPPING ========== */
@@ -132,5 +73,50 @@ body.dark-mode .oral {
   min-width: 120px;
   font-weight: 500;
   text-align: right;
-  display: table-cell;
 }
+
+/* ========== Publication ========== */
+/* ========== Publication ========== */
+.title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+.title-row .title {
+  font-weight: bold;
+  font-size: 1rem;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.title-row .title-links {
+  margin-left: auto;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  gap: 0 8px;
+}
+
+/* Inline lightweight links */
+.pub-link {
+  font-size: 0.9em;
+  line-height: 1.4;
+  /* 不要设置 color，让它用默认 <a> 的颜色 */
+}
+.pub-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Authors: 保持黑色，不要紫色 --- */
+.author a,
+.author a:link,
+.author a:visited {
+  color: inherit !important;
+  text-decoration: none;
+}
+.author a:hover { text-decoration: underline; }
