@@ -76,40 +76,33 @@ body.dark-mode .show-more-btn:hover { color: #ddd; }
 }
 
 /* ========== Publication ========== */
-/* ========== Publication ========== */
+/* --- Title row: grid layout --- */
 .title-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;  /* 左边自适应，右边固定在最右 */
   align-items: baseline;
-  gap: 12px;
-  flex-wrap: wrap;
+  column-gap: 12px;
   margin-bottom: 2px;
 }
+
+/* 左边标题 */
 .title-row .title {
   font-weight: bold;
   font-size: 1rem;
-  min-width: 0;
-  flex: 1 1 auto;
+  min-width: 0;             /* 允许缩小 */
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;       /* 允许多行换行 */
+  word-break: break-word;    /* 长单词也能断开 */
 }
 
-/* 小屏幕: 允许标题换行 (防止被截断) */
-@media (max-width: 600px) {
-  .title-row .title {
-    white-space: normal;   /* 可以多行 */
-    text-overflow: clip;   /* 不显示 ... */
-    overflow: visible;     /* 内容完整显示 */
-  }
-}
-
+/* 右边按钮链接 */
 .title-row .title-links {
-  margin-left: auto;
-  display: inline-flex;
-  flex: 0 0 auto;
+  display: flex;
   flex-wrap: wrap;
-  row-gap: 2px;
+  justify-content: flex-end; /* 永远靠右对齐 */
   gap: 0 8px;
+  row-gap: 2px;
 }
 
 /* Inline lightweight links */
