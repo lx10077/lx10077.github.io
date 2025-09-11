@@ -124,40 +124,157 @@ body.dark-mode .show-more-btn:hover { color: #ddd; }
 }
 .author a:hover { text-decoration: underline; }
 
+/* ========== BIBLIOGRAPHY (Research Papers) ========== */
 
-/* --- Bibliography: use custom bullets that follow text color --- */
-
-/* 1) Neutralize browser numbering/bullets & left indent */
+/* 1) 去掉默认的数字或圆点 */
 ol.bibliography,
 ul.bibliography,
 .bibliography ol,
 .bibliography ul {
   list-style: none !important;
   padding-left: 0 !important;
-  margin-left: 1.5em !important;
+  margin-left: 0 !important;
 }
 
-/* 2) Create our own bullet; aligns with the title */
+/* 2) 每一条 entry 左边留出空间 */
 ol.bibliography > li,
 ul.bibliography > li,
 .bibliography > li,
 .bibliography li {
   position: relative;
-  padding-left: 1em;   /* ← 加大缩进，留空间给 bullet */
-  margin: 0 0 0.6rem 0;  /* entry 间距 */
+  padding-left: 1.2em;   /* 左缩进给 bullet */
+  margin: 0 0 0.6rem 0; /* 每条之间间距 */
+  line-height: 1.5;
 }
 
-/* 3) The bullet itself; inherits current text color automatically */
+/* 3) 自定义 bullet */
 ol.bibliography > li::before,
 ul.bibliography > li::before,
 .bibliography > li::before,
 .bibliography li::before {
   content: "•";
   position: absolute;
-  left: 0em;           /* ← bullet 往右推一点，不会贴边 */
-  top: 0.25em;           /* 垂直微调，保证和文字对齐 */
-  color: currentColor;   /* bullet 跟文字颜色保持一致 (light/dark 自适应) */
-  font-weight: 700;      /* 粗体 bullet */
-  font-size: 1.1em;      /* 稍大于正文 */
+  left: 0;
+  top: 0.2em;
+  color: currentColor;   /* bullet 跟随文字颜色 */
+  font-weight: 700;      /* 粗体 */
+  font-size: 1.1em;      /* 稍大一点 */
   line-height: 1;
+}
+
+/* ========== TITLE + LINKS (grid 布局) ========== */
+// .title-row {
+//   display: grid;
+//   grid-template-columns: 1fr auto; /* 左边标题，右边按钮 */
+//   align-items: baseline;
+//   gap: 8px;
+//   margin-bottom: 2px;
+// }
+
+// .title-row .title {
+//   font-weight: bold;
+//   font-size: 1rem;
+//   min-width: 0;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: normal; /* 允许换行 */
+//   word-break: break-word; /* 避免长单词撑出屏幕 */
+// }
+
+// .title-row .title-links {
+//   display: inline-flex;
+//   flex-wrap: wrap;
+//   justify-content: flex-end; /* 按钮始终靠右 */
+//   gap: 0 8px; /* 按钮间距 */
+//   row-gap: 2px;
+// }
+
+/* Wide screens: unchanged */
+.title-row {
+  display: grid;
+  grid-template-columns: 1fr auto;  /* title left, links right */
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.title-row .title {
+  font-weight: bold;
+  font-size: 1rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;     /* allow wrapping */
+  word-break: break-word;
+}
+
+.title-row .title-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* keep right-aligned */
+  gap: 0 8px;
+  row-gap: 2px;
+}
+
+/* Narrow screens: links drop below title, stay on ONE line */
+/* Narrow screens: links drop below title, stay on ONE line */
+@media (max-width: 768px) {
+  .title-row {
+    grid-template-columns: 1fr;       /* 单列布局 */
+    grid-template-rows: auto auto;    /* 第一行: title, 第二行: links */
+    align-items: start;
+    row-gap: 2px;
+  }
+
+  .title-row .title-links {
+    order: 2;                         /* 确保在标题下方 */
+    display: flex;
+    justify-content: flex-start;      /* ✅ 改成靠左 */
+    flex-wrap: nowrap;                /* 保持一行 */
+    white-space: nowrap;              /* 不拆开 [Link] */
+    gap: 0 8px;
+
+    /* 如果太多按钮，允许横向滚动 */
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+}
+
+
+/* ========== LINK COLORS ========== */
+
+/* 作者链接：保持黑色/继承，不变色 */
+.author a,
+.author a:link,
+.author a:visited {
+  color: inherit !important;
+  text-decoration: none;
+}
+.author a:hover { text-decoration: underline; }
+
+/* 右边按钮链接：和默认超链接颜色一致 */
+.title-links a.pub-link {
+  text-decoration: none;
+}
+.title-links a.pub-link:hover {
+  text-decoration: underline;
+}
+
+/* 保证 dark 模式下 bullet 和按钮颜色跟随文字 */
+body.dark-mode .title-links a.pub-link {
+  color: var(--link-color, #c9d1d9); /* 跟随主题颜色 */
+}
+body.dark-mode .title-links a.pub-link:visited {
+  color: var(--link-visited-color, #8e96f0);
+}
+body.dark-mode .title-links a.pub-link:hover {
+  color: var(--link-hover-color, #ffffff);
+}
+
+/* 如果还存在 legacy 的圆角按钮 */
+.bibliography .links .btn {
+  color: inherit;
+  border-color: currentColor;
 }
