@@ -1,14 +1,6 @@
 "Zhang":
   - firstname: ["Zhihua"]
     url: https://www.math.pku.edu.cn/teachers/zhzhang/
-  
-"Sun":
-  - firstname: ["Qiang"]
-    url: https://sites.google.com/view/qsun
-
-"Wang":
-  - firstname: ["Shusen"]
-    url: http://wangshusen.github.io/
 
 "Yang":
   - firstname: ["Wenhao"]
@@ -31,21 +23,29 @@
     url: https://faketomatoes.github.io/
 
 "Su":
-  - firstname: ["Weijie"]
+  - firstname: ["Weijie J."]
     url: https://www.weijie-su.com/
 
 "Long":
   - firstname: ["Qi"]
     url: https://www.med.upenn.edu/long-lab/
 
-"Feng":
-  - firstname: ["Ruan"]
+"Ruan":
+  - firstname: ["Feng"]
     url: https://fengruan.github.io/
-
-"Wang":
-  - firstname: ["Huiyuan"]
-    url: https://huiyuan-wang.github.io/
 
 "Xie":
   - firstname: ["Yangxinyu"]
     url: https://xieyangxinyu.github.io/
+
+"Wang":
+  - firstname: ["Shusen"]
+    url: http://wangshusen.github.io/
+  - firstname: ["Chendi"]
+    url: https://sites.google.com/view/chendiwang
+  - firstname: ["Huiyuan"]
+    url: https://huiyuan-wang.github.io/
+
+"Sun":
+  - firstname: ["Qiang"]
+    url: https://sites.google.com/view/qsun
