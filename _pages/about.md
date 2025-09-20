@@ -22,4 +22,4 @@ Earlier, during my Ph.D., I designed methods for learning with heterogeneous and
 
 I am currently on the academic job market for the 2025–2026 cycle, and I am also open to scientific research opportunities in industry.
 
-**Contact Info**: lx10077 at upenn dot cn
+**Contact Info**: lx10077 at upenn dot edu
