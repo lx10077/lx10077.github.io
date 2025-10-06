@@ -20,6 +20,7 @@ My research interests lie broadly at the intersection of statistics, optimizatio
 
 Earlier, during my Ph.D., I designed methods for learning with heterogeneous and online data, addressing challenges such as communication efficiency in federated learning, robustness under data heterogeneity, and uncertainty quantification in streaming and decision-making problems. These experiences continue to shape my perspective on building scalable and trustworthy data-driven systems.
 
-I am currently on the academic job market for the 2025–2026 cycle, and I am also open to scientific research opportunities in industry.
+I am currently on the academic job market for the 2025–2026 cycle, seeking faculty positions in data science, statistics, mathematics, machine learning, and related fields. I am open to discussions about potential opportunities and collaborations.
 
-**Contact Info**: lx10077 at upenn dot edu
+**Contact Info**: lx10077 at upenn dot edu  
+**Curriculum Vitae**: [CV](assets/pdf/CV_XiangLi.pdf)
