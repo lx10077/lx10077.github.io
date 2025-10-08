@@ -19,7 +19,11 @@ My research aims to establish the statistical and algorithmic foundations for mo
 The following figure represents my current understanding of the statistical foundations of LLMs.
 It outlines a broad conceptual landscape rather than the full scope of my ongoing work—so far, my research has focused on only a few of these components. I view this structure as an evolving framework that helps conceptualize how statistical principles, empirical behaviors, and algorithmic mechanisms interact in modern AI systems.
 
-![Research](/assets/pdf/research_overview.pdf)
+<div style="text-align:center; margin: 20px 0;">
+  <img src="/assets/img/research_overview.png" 
+       alt="Research Overview" 
+       style="max-width: 70%; height: auto; border: none;">
+</div>
 
 #### **Recent Research**
 
