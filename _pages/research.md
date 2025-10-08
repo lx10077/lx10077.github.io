@@ -27,7 +27,7 @@ It outlines a broad conceptual landscape rather than the full scope of my ongoin
 
 #### **Recent Research**
 
-My current research focuses on LLM watermarking and LLM evaluation.  Please see the <a href="/publications/" target="_blank">Publications</a> page for more details.  
+My current research focuses on LLM watermarking and LLM evaluation.  Please see the <a href="/research/" target="_blank">Publications</a> page for more details.  
 - For watermarking, I presented a short course on it at ICSA 2025, summarizing recent advances and my ongoing research on its statistical foundations. Lecture slides are available [here](/assets/pdf/slides/2025ICSA_watermark_lecture.pdf).
 
 
