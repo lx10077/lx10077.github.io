@@ -22,7 +22,7 @@ It outlines a broad conceptual landscape rather than the full scope of my ongoin
 <div style="text-align:center; margin: 20px 0;">
   <img src="/assets/img/research_overview.png" 
        alt="Research Overview" 
-       style="max-width: 70%; height: auto; border: none;">
+       style="max-width: 100%; height: auto; border: none;">
 </div>
 
 #### **Recent Research**
