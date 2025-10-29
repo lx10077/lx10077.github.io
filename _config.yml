@@ -16,7 +16,7 @@ footer_text: >
 keywords:   # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 📊  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: Xiang.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://lx10077.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -76,7 +76,7 @@ telegram_username: # your Telegram user name
 scholar_userid:  -okA4fgAAAAJ&hl=zh-CN # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: 0000-0002-2466-4069 # your ORCID ID
+orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
