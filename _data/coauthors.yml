@@ -1,34 +1,30 @@
-"Zhang":
-  - firstname: ["Zhihua"]
-    url: https://www.math.pku.edu.cn/teachers/zhzhang/
-
-"Yang":
-  - firstname: ["Wenhao"]
-    url: https://yangwenhaosms.github.io/
+"Cai":
+  - firstname: ["T. Tony"]
+    url: http://www-stat.wharton.upenn.edu/~tcai/
 
 "Chang":
   - firstname: ["Xiangyu"]
     url: http://xiangyuchang.github.io/
 
-"Jordan":
-  - firstname: ["Michael I"]
-    url: http://people.eecs.berkeley.edu/~jordan/
-
 "Chen":
   - firstname: ["Xinyun"]
     url: https://myweb.cuhk.edu.cn/chenxinyun
+
+"Jordan":
+  - firstname: ["Michael I"]
+    url: http://people.eecs.berkeley.edu/~jordan/
 
 "Liang":
   - firstname: ["Jiadong"]
     url: https://faketomatoes.github.io/
 
-"Su":
-  - firstname: ["Weijie J."]
-    url: https://www.weijie-su.com/
-
 "Long":
   - firstname: ["Qi"]
     url: https://www.med.upenn.edu/long-lab/
+
+"Su":
+  - firstname: ["Weijie J."]
+    url: https://www.weijie-su.com/
 
 "Song":
   - firstname: ["Peter"]
@@ -42,6 +38,10 @@
   - firstname: ["Yangxinyu"]
     url: https://xieyangxinyu.github.io/
 
+"Xin":
+  - firstname: ["Jiayi"]
+    url: https://raina-xin.github.io/
+
 "Wang":
   - firstname: ["Shusen"]
     url: http://wangshusen.github.io/
@@ -54,6 +54,10 @@
   - firstname: ["Qiang"]
     url: https://sites.google.com/view/qsun
 
-"Cai":
-  - firstname: ["T. Tony"]
-    url: http://www-stat.wharton.upenn.edu/~tcai/
+"Yang":
+  - firstname: ["Wenhao"]
+    url: https://yangwenhaosms.github.io/
+  
+"Zhang":
+  - firstname: ["Zhihua"]
+    url: https://www.math.pku.edu.cn/teachers/zhzhang/
