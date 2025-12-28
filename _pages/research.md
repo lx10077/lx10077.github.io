@@ -95,7 +95,7 @@ My recent work explores these ideas in a range of settings, including local SGD 
   Y. Han, S. Lin, **X. Li**, and Z. Zhang (Alphabetical).  *Journal of Machine Learning Research*, 2024.
 
 - **Personalized Federated Learning towards Communication Efficiency, Robustness, and Fairness**  
-  S. Lin*, Y. Han*, **X. Li**, and Z. Zhang. *Neural Information Processing Systems (NeurIPS)*, 2022.
+  S. Lin\*, Y. Han\*, **X. Li**, and Z. Zhang. *Neural Information Processing Systems (NeurIPS)*, 2022.
 
 
 
