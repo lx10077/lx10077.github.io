@@ -109,6 +109,9 @@ My recent work explores these ideas in a range of settings, including local SGD 
 
 - **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**  
   **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2302.07690*, 2023.
+  
+- **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
+  **X. Li**, S. Wang, and Z. Zhang. *AAAI Conference on Artificial Intelligence*, 2020.
 
 - **Asymptotic Behaviors of Projected Stochastic Approximation: A Jump Diffusion Perspective**  
   J. Liang, Y. Han, **X. Li**, and Z. Zhang. *Advances in Neural Information Processing Systems (NeurIPS)*, 2022 (Spotlight).
