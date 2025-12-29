@@ -15,7 +15,7 @@ My research interests lie in statistical and algorithmic principles for inferenc
 <div style="text-align:center; margin: 20px 0;">
   <img src="/assets/img/full_overview.png" 
        alt="Research Overview" 
-       style="max-width: 90%; height: auto; border: none;">
+       style="max-width: 100%; height: auto; border: none;">
 </div>
 
 -----
@@ -24,7 +24,7 @@ My research interests lie in statistical and algorithmic principles for inferenc
 
 Large language models (LLMs) and other powerful architectures have achieved remarkable success, yet in many domains there remains a need for theoretical guarantees of efficiency, reliability, and safety. I believe that statistical principles and algorithmic design together provide a rigorous foundation for making AI systems interpretable, reliable, and generalizable. Statistics offers principled tools for reasoning about data, dependence structures, and uncertainty, while algorithms translate these principles into practical methods that enable robust and efficient learning.
 
-My current work focuses on statistical watermarking, which provides provable methods for embedding, detecting, and tracing AI-generated content, as well as on model evaluation and uncertainty quantification for large language models.
+My current work focuses on statistical watermarking, which provides provable methods for detecting and tracing AI-generated content, as well as on model evaluation and uncertainty quantification for large language models.
 Beyond these topics, I am also actively exploring related statistical problems, including synthetic data, reasoning, and fundamental limits.
 
 ###### **Watermarking**
