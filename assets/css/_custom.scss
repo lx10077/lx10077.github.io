@@ -115,15 +115,6 @@ body.dark-mode .show-more-btn:hover { color: #ddd; }
   text-decoration: underline;
 }
 
-/* --- Authors: 保持黑色，不要紫色 --- */
-.author a,
-.author a:link,
-.author a:visited {
-  color: inherit !important;
-  text-decoration: none;
-}
-.author a:hover { text-decoration: underline; }
-
 /* ========== BIBLIOGRAPHY (Research Papers) ========== */
 
 /* 1) 去掉默认的数字或圆点 */
@@ -276,4 +267,51 @@ body.dark-mode .title-links a.pub-link:hover {
 .bibliography .links .btn {
   color: inherit;
   border-color: currentColor;
+}
+
+/* Make links in page description use theme color */
+.post-description a,
+.page-description a,
+.desc a {
+  color: var(--global-theme-color) !important;
+}
+
+.post-description a:hover,
+.page-description a:hover,
+.desc a:hover {
+  color: var(--global-hover-color) !important;
+}
+
+
+/* 固定显示前几条：通过高度控制（默认 5 条左右的视觉高度） */
+.news-scroll {
+  max-height: 140px;     // 想显示更多行就调大，比如 180/220
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* 避免 table 自带的底部空隙 */
+.news-table {
+  margin-bottom: 0;
+}
+
+/* 让每条 news 像你原来的 table 一样紧凑（行间距≈0） */
+.news-table th,
+.news-table td {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.25;
+}
+
+/* 日期列不要换行 */
+.news-date {
+  white-space: nowrap;
+  padding-top: 2px;      // 可选：让视觉上更贴第一行
+}
+
+
+/* 如果 inline 内容里还有 p，干掉 p 的默认 margin（否则会撑高某些行） */
+.news-content p {
+  margin: 0;
 }
