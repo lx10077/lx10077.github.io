@@ -1,11 +1,9 @@
 ---
-layout: page_no_title
+layout: page
 permalink: /overview/
 title: Research         
-long_title: Research
 description: >
-  An up-to-date list is available on
-  <a href='https://scholar.google.com/citations?user=-okA4fgAAAAJ&hl=zh-CN'>Google Scholar</a>.
+  An up-to-date list is available on <a href='https://scholar.google.com/citations?user=-okA4fgAAAAJ&hl=zh-CN'>Google Scholar</a> or the <a href='/research/'>Publications</a> page.
 nav: true
 nav_order: 1
 ---
