@@ -10,8 +10,7 @@ nav_order: 3
 ### Teaching 
 
 **Instructor**
-: - Short Course, *Statistical Inference in Large Language Models*,  
-    2025 ICSA Applied Statistics Symposium, Summer 2025 ([slides](/assets/pdf/slides/2025ICSA_watermark_lecture.pdf))
+: - Short Course, *Statistical Inference in Large Language Models*,  2025 ICSA Applied Statistics Symposium, Summer 2025 ([slides](/assets/pdf/slides/2025ICSA_watermark_lecture.pdf))
 
 **Invited Guest Lecturer**
 : - STAT 9917: *Statistical Topics in Large Language Models*,  University of Pennsylvania, Spring 2025
@@ -33,7 +32,9 @@ nav_order: 3
 - *Journal of the American Statistical Association*  
 - *Information and Inference: A Journal of the IMA*  
 - *Annals of Applied Probability*  
-- *Operations Research*  
+- *Operations Research* 
+- *Biometrika*
+- *Neurocomputing*
 - *IEEE Transactions on Automatic Control*  
 - *IEEE Open Journal of Signal Processing*  
 - *IEEE Journal on Selected Areas in Communications*  
