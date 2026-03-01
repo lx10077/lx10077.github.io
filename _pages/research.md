@@ -30,20 +30,23 @@ Beyond these topics, I am also actively investigating related statistical proble
 - **A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency, and Optimal Rules**  
   **X. Li**, F. Ruan, H. Wang, Q. Long, and W. J. Su. *The Annals of Statistics*, 2025.
 
+- **Optimal Detection for Language Watermarks with Pseudorandom Collision**  
+  T. T. Cai, **X. Li**, Q. Long, W. J. Su, and G. G. Wen (Alphabetical).  *arXiv preprint arXiv:2510.22007*, 2025.
+
 - **Robust Detection of Watermarks in Large Language Models under Human Edits**  
   **X. Li**, F. Ruan, H. Wang, Q. Long, and W. J. Su. *Journal of the Royal Statistical Society: Series B (Statistical Methodology)*, 2025.
+
+ - **On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection**  
+  W. He\*, **X. Li**\*, T. Shang, L. Shen, W. J. Su, and Q. Long. *Advances in Neural Information Processing Systems (NeurIPS)*, 2025 (Spotlight).
 
 - **Debiasing Watermarks for Large Language Models via Maximal Coupling**  
   Y. Xie, **X. Li**, T. Mallick, W. J. Su, and R. Zhang. *Journal of the American Statistical Association*, 2025.
 
-- **Optimal Detection for Language Watermarks with Pseudorandom Collision**  
-  T. T. Cai, **X. Li**, Q. Long, W. J. Su, and G. G. Wen (Alphabetical).  *arXiv preprint arXiv:2510.22007*, 2025.
-
 - **Optimal Estimation of Watermark Proportions in Hybrid AI–Human Texts**  
   **X. Li**, G. G. Wen, W. He, J. Wu, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.22343*, 2025.
-
-- **On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection**  
-  W. He\*, **X. Li**\*, T. Shang, L. Shen, W. J. Su, and Q. Long. *Advances in Neural Information Processing Systems (NeurIPS)*, 2025 (Spotlight).
+  
+- **Improving the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models**  
+  W. He\*, **X. Li**\*, L. Shen, W. J. Su, and Q. Long. *International Conference on Learning Representations (ICLR)*, 2026.
 
 - **TAB-DRW: A DFT-Based Robust Watermark for Generative Tabular Data**  
   Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su.   *arXiv preprint arXiv:2511.21600*, 2025.
@@ -96,20 +99,16 @@ My recent work explores these ideas in a range of settings, including local SGD 
   S. Lin\*, Y. Han\*, **X. Li**, and Z. Zhang. *Advances in Neural Information Processing Systems (NeurIPS)*, 2022.
 
 
-
 ###### **Stochastic Approximation**
 
 - **A Statistical Analysis of Polyak–Ruppert Averaged Q-Learning**  
   **X. Li**, W. Yang, J. Liang, Z. Zhang, and M. I. Jordan. *International Conference on Artificial Intelligence and Statistics (AISTATS)*, 2023.
 
 - **Convergence and Inference of Stream SGD, with Applications to Queueing Systems and Inventory Control**  
-  **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026+.
+  **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026.
 
 - **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**  
   **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2302.07690*, 2023.
-  
-- **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
-  **X. Li**, S. Wang, and Z. Zhang. *AAAI Conference on Artificial Intelligence*, 2020.
 
 - **Asymptotic Behaviors of Projected Stochastic Approximation: A Jump Diffusion Perspective**  
   J. Liang, Y. Han, **X. Li**, and Z. Zhang. *Advances in Neural Information Processing Systems (NeurIPS)*, 2022 (Spotlight).
@@ -120,6 +119,9 @@ My recent work explores these ideas in a range of settings, including local SGD 
 - **Finite-Time Decoupled Convergence in Nonlinear Two-Time-Scale Stochastic Approximation**  
   Y. Han, **X. Li**, and Z. Zhang. *arXiv preprint arXiv:2401.03893*, 2024.
 
+- **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
+  **X. Li**, S. Wang, and Z. Zhang. *AAAI Conference on Artificial Intelligence*, 2020.
+  
 -----
 
 #### **Decision-Making under Uncertainty**
