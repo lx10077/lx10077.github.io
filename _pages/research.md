@@ -10,15 +10,9 @@ nav_order: 1
 
 My research interests lie in statistical and algorithmic principles for inference and decision-making in data-driven systems, motivated by new data structures and analysis paradigms arising from modern AI, online learning, and federated systems.
 
-<div style="text-align:center; margin: 20px 0;">
-  <img src="/assets/img/full_overview.png" 
-       alt="Research Overview" 
-       style="max-width: 100%; height: auto; border: none;">
-</div>
-
 -----
 
-#### **Statistics for AI: Statistical Foundations of LLMs**
+#### **Statistical Foundations of LLMs**
 
 Large language models (LLMs) and other powerful architectures have achieved remarkable success, yet in many domains there remains a need for theoretical guarantees of efficiency, reliability, and safety. I believe that statistical principles and algorithmic design together provide a rigorous foundation for making AI systems interpretable, reliable, and generalizable. Statistics offers principled tools for reasoning about data, dependence structures, and uncertainty, while algorithms translate these principles into practical methods that enable robust and efficient learning.
 
@@ -55,14 +49,6 @@ Beyond these topics, I am also actively investigating related statistical proble
 
 - **Evaluating the Unseen Capabilities: How Many Theorems Do LLMs Know?**  
   **X. Li**, J. Xin, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.02058*, 2025.
-
------
-
-#### **AI for Statistics**
-
-I am interested in using modern AI models as tools to support and enhance statistical analysis, particularly in data-scarce or complex settings. An interesting direction is the use of synthetic data to address challenges such as missing data, data imbalance, and limited sample sizes, where carefully generated artificial data may complement or augment observed datasets.
-
-More broadly, I view AI as a way to automate and assist parts of the statistical workflow, such as data representation, preprocessing, and exploratory analysis, especially for unstructured data including text. This direction aims to understand when and how AI-based tools can be used responsibly and effectively within statistical practice.
 
 -----
 
