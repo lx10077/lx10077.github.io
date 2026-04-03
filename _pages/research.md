@@ -42,8 +42,8 @@ Beyond these topics, I am also actively investigating related statistical proble
 - **Improving the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models**  
   W. He\*, **X. Li**\*, L. Shen, W. J. Su, and Q. Long. *International Conference on Learning Representations (ICLR)*, 2026.
 
-- **TAB-DRW: A DFT-Based Robust Watermark for Generative Tabular Data**  
-  Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su.   *arXiv preprint arXiv:2511.21600*, 2025.
+- **Robust Spectral Watermark for Synthetic Tabular Data**  
+  Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su.   *Statistical Learning and Data Science*, 2026.
 
 ###### **Model Evaluation**
 
