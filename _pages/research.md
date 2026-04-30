@@ -49,6 +49,9 @@ Beyond these topics, I am also actively investigating related statistical proble
 
 - **Evaluating the Unseen Capabilities: How Many Theorems Do LLMs Know?**  
   **X. Li**, J. Xin, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.02058*, 2025.
+  
+- **UCS: Estimating Unseen Coverage for Improved In-Context Learning**  
+  J. Xin, **X. Li**, E. Qiang, W. He, T. Shang, W. J. Su, and Q. Long. *Findings of the Association for Computational Linguistics*, 2026.
 
 -----
 
@@ -103,7 +106,7 @@ My recent work explores these ideas in a range of settings, including local SGD 
   Y. Han, **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2412.17070*, 2024.
 
 - **Finite-Time Decoupled Convergence in Nonlinear Two-Time-Scale Stochastic Approximation**  
-  Y. Han, **X. Li**, and Z. Zhang. *arXiv preprint arXiv:2401.03893*, 2024.
+  Y. Han, **X. Li**, and Z. Zhang. *Journal of Machine Learning Research*, 2026.
 
 - **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
   **X. Li**, S. Wang, and Z. Zhang. *AAAI Conference on Artificial Intelligence*, 2020.
