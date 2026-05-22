@@ -19,7 +19,7 @@ Large language models (LLMs) and other powerful architectures have achieved rema
 My current work focuses on statistical watermarking, which provides provable methods for detecting and tracing AI-generated content, as well as on model evaluation and uncertainty quantification for large language models.
 Beyond these topics, I am also actively investigating related statistical problems, including synthetic data, reasoning, and fundamental limits.
 
-###### **Watermarking**
+###### **LLM Watermarking**
 
 - **A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency, and Optimal Rules**  
   **X. Li**, F. Ruan, H. Wang, Q. Long, and W. J. Su. *The Annals of Statistics*, 2025.
@@ -42,10 +42,18 @@ Beyond these topics, I am also actively investigating related statistical proble
 - **Improving the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models**  
   W. He\*, **X. Li**\*, L. Shen, W. J. Su, and Q. Long. *International Conference on Learning Representations (ICLR)*, 2026.
 
+- **Selective Disclosure Watermarking for Large Language Models**  
+  X. Chen, **X. Li**, Y. Xie, and Q. Long. *International Conference on Machine Learning (ICML)*, 2026. 
+
+###### **AI Content Detection**
+
+- **Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Texts**  
+  L. Liang and **X. Li**. *arXiv preprint arXiv:2605.12890*, 2026.
+
 - **Robust Spectral Watermark for Synthetic Tabular Data**  
   Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su.   *Statistical Learning and Data Science*, 2026.
 
-###### **Model Evaluation**
+###### **LLM Knowledge**
 
 - **Evaluating the Unseen Capabilities: How Many Theorems Do LLMs Know?**  
   **X. Li**, J. Xin, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.02058*, 2025.
