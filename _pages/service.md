@@ -29,6 +29,7 @@ nav_order: 3
 ### Journal Reviewing
 - *Journal of Machine Learning Research*  
 - *Transactions on Machine Learning Research*  
+- *Annals of Statistics*  
 - *Journal of the American Statistical Association*  
 - *Information and Inference: A Journal of the IMA*  
 - *Annals of Applied Probability*  

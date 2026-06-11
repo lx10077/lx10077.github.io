@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Full Name
-      value: Xiang Li
+      value: Xiang Li (李翔)
     # - name: Date of Birth
     #   value: September 1996
     - name: Languages
@@ -68,6 +68,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items: 
+        - Golden Reviewer in ICML 2026, top 25%
     - year: 2025 
       items: 
         - IMS New Researcher Travel Award
@@ -111,7 +114,7 @@
 #         - Understand the trade-offs between accuracy, privacy, robustness, and fairness.
 #         - Design efficient algorithms with provable guarantees for large-scale problems.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Tennis, Music, Animation.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Tennis, Music, Animation.
