@@ -774,7 +774,7 @@ ul.bibliography {
 
 .v3-home-body .v3-main {
   display: flex;
-  padding-top: clamp(90px, 20vh, 171px);
+  padding-top: clamp(60px, 12vh, 105px);
   align-items: flex-start;
 }
 
@@ -1102,8 +1102,9 @@ ul.bibliography {
   margin: 1.15rem 0 0.35rem;
   color: var(--v3-accent);
   font-family: var(--site-font);
-  font-size: 0.69rem;
+  font-size: var(--v3-paper-title-size);
   font-weight: 650;
+  line-height: var(--v3-paper-title-leading);
   letter-spacing: 0.045em;
   text-transform: uppercase;
 }
@@ -1401,11 +1402,12 @@ ul.bibliography {
   }
 
   .v3-home-body .v3-main {
+    padding-top: 32px;
     align-items: flex-start;
   }
 
   .v3-profile {
-    padding-top: 1.5rem;
+    padding-top: 0;
   }
 
   .v3-profile > img {
