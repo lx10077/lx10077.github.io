@@ -1,6 +1,6 @@
-Large language models (LLMs) and other powerful architectures have achieved remarkable success, yet in many domains there remains a need for theoretical guarantees of efficiency, reliability, and safety. I believe that statistical principles and algorithmic design together provide a rigorous foundation for making AI systems interpretable, reliable, and generalizable. Statistics offers principled tools for reasoning about data, dependence structures, and uncertainty, while algorithms translate these principles into practical methods that enable robust and efficient learning.
+Large language models (LLMs) and other generative models have achieved remarkable success, yet fundamental questions about their reliability, interpretability, and safety remain. I view statistics as a principled language for reasoning about data, dependence, and uncertainty, and algorithms as the bridge from these principles to practical learning systems.
 
-My current work focuses on statistical watermarking, which provides provable methods for detecting and tracing AI-generated content, as well as on model evaluation and uncertainty quantification for large language models. Beyond these topics, I am also actively investigating related statistical problems, including synthetic data, reasoning, and fundamental limits.
+Guided by this perspective, my work studies how generative AI systems can be made more reliable and better understood. It spans statistical watermarking, model evaluation, uncertainty quantification, and broader questions about their training and behavior.
 
 ###### LLM Watermarking
 

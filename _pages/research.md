@@ -13,7 +13,7 @@ site_section: research
 
   <nav class="v3-research-hub" aria-label="Research themes">
     <a href="{{ '/research/generative-ai/' | relative_url }}">
-      <span class="v3-research-hub-title">Statistical Foundations of Generative AI</span>
+      <span class="v3-research-hub-title">Foundations of Generative AI</span>
       <span class="v3-research-hub-meta">Language watermarking · AI content detection · LLM evaluation</span>
     </a>
     <a href="{{ '/research/federated-learning/' | relative_url }}">

@@ -1,7 +1,7 @@
 ---
 layout: site
 permalink: /research/generative-ai/
-title: Statistical Foundations of Generative AI
+title: Foundations of Generative AI
 site_section: research
 ---
 
@@ -9,7 +9,7 @@ site_section: research
 <article class="v3-article v3-research-page">
   <header class="v3-page-header v3-research-detail-header">
     <a href="{{ '/research/' | relative_url }}">← Research</a>
-    <h1>Statistical Foundations of Generative AI</h1>
+    <h1>Foundations of Generative AI</h1>
   </header>
   <div class="v3-research-copy">
     {{ research_detail | markdownify }}

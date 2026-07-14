@@ -2,7 +2,7 @@ When adaptive optimization algorithms are used to compute optimal solutions, an 
 
 A key theme is that carefully designed gradient estimators or algorithms can endow learned solutions with desirable statistical properties (such as valid uncertainty quantification, robustness, privacy, or fairness) without sacrificing computational efficiency. In particular, algorithmic randomness and gradient noise can be explicitly exploited to construct confidence intervals and enable principled statistical inference, offering a convenient pathway for understanding uncertainty in modern learning systems.
 
-My recent work explores these ideas in a range of settings, including local SGD in federated learning, Q-learning in reinforcement learning, and operations research problems such as queueing systems and inventory control.
+My work explores these ideas in a range of settings, including local SGD in federated learning, Q-learning in reinforcement learning, and operations research problems such as queueing systems and inventory control.
 
 ###### Stochastic Approximation
 
