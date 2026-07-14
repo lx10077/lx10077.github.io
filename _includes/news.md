@@ -1,0 +1,9 @@
+- **Jul. 2026** — *Selective Disclosure Watermarking for Large Language Models* was accepted to ICML 2026. [arXiv](https://arxiv.org/abs/2607.05353)
+- **Mar. 2026** — I will present *Optimal Detection for Language Watermarks with Pseudorandom Collisions* at ENAR, IWSM, and ICSA.
+- **Nov. 2025** — I gave an [SDLS webinar](https://www.eventbrite.com/e/llm-training-and-coding-for-statistical-learning-and-data-science-tickets-1894442511549?aff=oddtdtcreator) on LLM API usage and watermarking. [Slides]({{ '/assets/pdf/slides/2025SDLS_watermark_webinar.pdf' | relative_url }})
+- **Sep. 2025** — Two papers were accepted to NeurIPS 2025 as spotlights: one on watermark detection and one on privacy in decentralized federated learning.
+- **Aug. 2025** — I presented recent work on estimating watermark proportions at JSM 2025.
+- **Jun. 2025** — At [ICSA 2025](https://symposium2025.icsa.org/), I presented work on robust watermark detection and taught a short course on LLM watermarking. [Slides]({{ '/assets/pdf/slides/2025ICSA_watermark_lecture.pdf' | relative_url }})
+- **Apr. 2025** — I received the IMS New Researcher Travel Award.
+- **Aug. 2024** — I chaired a federated learning session at [MOPTA 2024](https://coral.ise.lehigh.edu/~mopta/pdf/MOPTA2024-SessionOverview.pdf).
+- **May 2024** — I presented recent watermarking work at the [IMS-NUS workshop](https://ims.nus.edu.sg/events/statistical-machine-learninghdd/).

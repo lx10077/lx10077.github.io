@@ -1,26 +1,41 @@
 ---
-layout: about
-title: Home
+layout: site
 permalink: /
-subtitle: 
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+title: Xiang Li
+site_home: true
 ---
 
-I am a postdoctoral researcher in Statistics at the University of Pennsylvania, working with <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p8939931">Prof. Qi Long</a> and <a href="http://stat.wharton.upenn.edu/~suw/">Prof. Weijie Su</a>. I received my Ph.D. in Statistics from the <a href="http://english.math.pku.edu.cn/">School of Mathematical Sciences</a>, <a href="https://english.pku.edu.cn/">Peking University</a> in 2023, advised by <a href="http://www.math.pku.edu.cn/teachers/zhzhang/" target="_blank">Prof. Zhihua Zhang</a>. Before that, I earned double bachelor’s degrees in Statistics and Economics at Peking University in 2018.
+{% capture news_content %}{% include news.md %}{% endcapture %}
+<section class="v3-profile" aria-labelledby="site-name">
+  <img src="{{ '/assets/img/prof_pic-480.webp' | relative_url }}" alt="Portrait of Xiang Li" width="480" height="598" fetchpriority="high">
+  <h1 id="site-name">Xiang Li</h1>
+  <p>I am a postdoctoral researcher in Statistics at the University of Pennsylvania. My work develops statistical and algorithmic foundations for reliable AI and modern learning systems.</p>
+  <p>I will join the Department of Statistics at Rutgers University as an Assistant Professor in September 2026.</p>
 
-My research interests lie broadly at the intersection of statistics, optimization, and machine learning, with applications spanning data science and artificial intelligence. My current research focuses on the statistical and algorithmic foundations of reliable AI, with emphasis on large language models (LLMs). I investigate statistical watermarking to ensure the provenance and robustness of AI-generated content and develop tools to evaluate how LLMs encode and use knowledge.
+  <div class="v3-social" aria-label="Profile links and updates">
+    <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    <button type="button" data-site-disclosure="featured-papers" aria-controls="featured-papers" aria-expanded="false">Recent / Featured Papers</button>
+    <button type="button" data-site-disclosure="news-panel" aria-controls="news-panel" aria-expanded="false">News</button>
+    <a href="mailto:{{ site.email }}">Email</a>
+    <a href="{{ '/assets/pdf/CV_XiangLi.pdf' | relative_url }}">CV</a>
+  </div>
 
-Earlier, during my Ph.D., I designed methods for learning with heterogeneous and online data, addressing challenges such as communication efficiency in federated learning, robustness under data heterogeneity, and uncertainty quantification in streaming and decision-making problems. These experiences continue to shape my perspective on building scalable and trustworthy data-driven systems.
+  <div class="v3-buttons" aria-label="Site sections">
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a href="{{ '/service/' | relative_url }}">Service</a>
+    <a href="{{ '/talks/' | relative_url }}">Talks</a>
+  </div>
 
-I will join the <a href="https://statistics.rutgers.edu/">Department of Statistics</a> at Rutgers University as an Assistant Professor in September 2026.
+  <div class="v3-home-disclosures">
+    <section id="featured-papers" class="v3-disclosure-content v3-publications" hidden>
+      {% include selected_papers.html %}
+      <a class="v3-disclosure-more" href="{{ '/publications/' | relative_url }}">All publications →</a>
+    </section>
 
-**Contact Info**: lx10077 at upenn dot edu  
-**Curriculum Vitae**: [CV](assets/pdf/CV_XiangLi.pdf)
+    <section id="news-panel" class="v3-disclosure-content v3-home-news" hidden>
+      {{ news_content | markdownify }}
+    </section>
+  </div>
+</section>

@@ -1,19 +1,21 @@
 ---
-layout: page
-permalink: /research/
+layout: site
+permalink: /publications/
 title: Publications
-description: >
-  * denotes equal contribution and ** denotes alphabet order.  
-  An up-to-date list is available on 
-  <a href='https://scholar.google.com/citations?user=-okA4fgAAAAJ&hl=zh-CN'>Google Scholar</a>.
-nav: true
-nav_order: 2
+site_section: publications
 ---
 
-{% bibliography -f papers
-   --group_by finished
-   --group_order descending
-   --sort_by finished
-   --order descending
-   --template bib
-%}
+<article class="v3-article v3-publications">
+  <header class="v3-page-header">
+    <h1>Publications</h1>
+    <p>* denotes equal contribution and ** denotes alphabetical order. See also <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>.</p>
+  </header>
+
+  {% bibliography -f papers
+     --group_by finished
+     --group_order descending
+     --sort_by finished
+     --order descending
+     --template bib
+  %}
+</article>

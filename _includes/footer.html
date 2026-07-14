@@ -1,25 +1,15 @@
-    {% if site.footer_fixed %}
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
-        {%- if site.impressum_path -%}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-        {%- endif -%}
-        {%- if site.last_updated -%}
-        Last updated: {{ "now" | date: '%B %d, %Y' }}.
-        {%- endif %}
-      </div>
-    </footer>
-    {%- else -%}
-    <footer class="sticky-bottom mt-5">
-      <div class="container">
-        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
-        {%- if site.impressum_path -%}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-        {%- endif -%}
-        {%- if site.last_updated -%}
-        Last updated: {{ "now" | date: '%B %d, %Y' }}.
-        {%- endif %}
-      </div>
-    </footer>
-    {%- endif %}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="footer-name">Xiang Li</span>
+      <span class="footer-role">Statistics · Algorithms · Reliable AI</span>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Scholar</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="{{ '/assets/pdf/CV_XiangLi.pdf' | relative_url }}">CV</a>
+    </div>
+    <div class="footer-meta">© {{ site.time | date: '%Y' }} Xiang Li</div>
+  </div>
+</footer>

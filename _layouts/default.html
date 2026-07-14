@@ -10,15 +10,15 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="site-body{% if page.permalink == '/' %} home-page{% endif %}">
 
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main class="container site-container">
       {{ content }}
-    </div>
+    </main>
 
     <!-- Footer -->
     {%- include footer.html %}
@@ -31,6 +31,5 @@
     {% include scripts/badges.html %}
     {% include scripts/mathjax.html %}
     {% include scripts/analytics.html %}
-    {% include scripts/progressBar.html %}
   </body>
 </html>

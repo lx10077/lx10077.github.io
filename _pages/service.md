@@ -1,49 +1,46 @@
 ---
-layout: page
+layout: site
 permalink: /service/
 title: Service
-description: This page summarizes my professional service activities, including conference and journal reviewing, event organization, and teaching-related service.
-nav: true
-nav_order: 3
+site_section: service
 ---
 
-### Teaching 
+<article class="v3-article v3-service-page">
+  <header class="v3-page-header">
+    <h1>Service</h1>
+    <p>Professional service in reviewing and event organization.</p>
+  </header>
 
-**Instructor**
-: - Short Course, *Statistical Inference in Large Language Models*,  2025 ICSA Applied Statistics Symposium, Summer 2025 ([slides](/assets/pdf/slides/2025ICSA_watermark_lecture.pdf))
+  <section>
+    <h2>Conference reviewing</h2>
+    <p class="v3-inline-list">NeurIPS · ICML · ICLR · UAI · AISTATS · IJCAI · AAAI</p>
+  </section>
 
-**Invited Guest Lecturer**
-: - STAT 9917: *Statistical Topics in Large Language Models*,  University of Pennsylvania, Spring 2025
+  <section>
+    <h2>Journal reviewing</h2>
+    <ul class="v3-service-list">
+      <li>Journal of Machine Learning Research</li>
+      <li>Transactions on Machine Learning Research</li>
+      <li>Annals of Statistics</li>
+      <li>Journal of the American Statistical Association</li>
+      <li>Information and Inference: A Journal of the IMA</li>
+      <li>Annals of Applied Probability</li>
+      <li>Operations Research</li>
+      <li>Biometrika</li>
+      <li>Neurocomputing</li>
+      <li>IEEE Transactions on Automatic Control</li>
+      <li>IEEE Open Journal of Signal Processing</li>
+      <li>IEEE Journal on Selected Areas in Communications</li>
+      <li>IEEE Transactions on Parallel and Distributed Systems</li>
+      <li>World Wide Web</li>
+    </ul>
+  </section>
 
-**Teaching Assistant**
-: - Linear Algebra, Peking University, Spring 2021  
-  - Reinforcement Learning: Theory and Algorithms,  Peking University, Fall 2019
-
---- 
-
-### Conference Reviewing
-- NeurIPS · ICML · ICLR · UAI · AISTATS · IJCAI · AAAI
-
----
-
-### Journal Reviewing
-- *Journal of Machine Learning Research*  
-- *Transactions on Machine Learning Research*  
-- *Annals of Statistics*  
-- *Journal of the American Statistical Association*  
-- *Information and Inference: A Journal of the IMA*  
-- *Annals of Applied Probability*  
-- *Operations Research* 
-- *Biometrika*
-- *Neurocomputing*
-- *IEEE Transactions on Automatic Control*  
-- *IEEE Open Journal of Signal Processing*  
-- *IEEE Journal on Selected Areas in Communications*  
-- *IEEE Transactions on Parallel and Distributed Systems*  
-- *World Wide Web*  
-
----
-
-### Event Organization
-- **Aug. 2024** — Session Chair, *``Theoretical and Algorithmic Developments in Federated Learning''*,  
-  *Modeling and Optimization: Theory and Applications (MOPTA) Conference*
+  <section>
+    <h2>Event organization</h2>
+    <div class="v3-service-event">
+      <span>Aug. 2024</span>
+      <p>Session Chair, <em>Theoretical and Algorithmic Developments in Federated Learning</em>, Modeling and Optimization: Theory and Applications (MOPTA) Conference.</p>
+    </div>
+  </section>
+</article>

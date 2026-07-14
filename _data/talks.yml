@@ -1,0 +1,34 @@
+- title: "Statistical Inference in Large Language Models: Language Watermarking, Motivation, Methods & Advances"
+  date: 2025-06-15
+  kind: Short course
+  event: 2025 ICSA Applied Statistics Symposium
+  slides: /assets/pdf/slides/2025ICSA_watermark_lecture.pdf
+
+- title: "Robust Watermark Detection and Efficient Proportion Estimation for Human-Edited Watermarked Text"
+  date: 2025-06-16
+  kind: Invited talk
+  event: 2025 ICSA Applied Statistics Symposium
+  slides: /assets/pdf/slides/2025ICSA_proportion.pdf
+
+- title: "Evaluating the Unseen Capabilities: How Much Do LLMs Actually Know?"
+  date: 2025-08-21
+  kind: Research talk
+  slides: /assets/pdf/slides/2025GM_unseen.pdf
+
+- title: "On the Convergence of FedAvg on Non-IID Data"
+  date: 2020-01-01
+  kind: Extended research talk
+  event: ICLR 2020 Oral
+  slides: /assets/pdf/slides/2024FedAvg_Extended.pdf
+
+- title: "Complete Asymptotic Analysis for Projected Stochastic Approximation and Debiased Variants"
+  date: 2023-09-27
+  kind: Conference talk
+  event: Allerton 2023
+  slides: /assets/pdf/slides/2023ALLERTON_LPSA.pdf
+
+- title: "Privacy Amplification Strategies towards Better Privacy-Utility Trade-off"
+  date: 2023-04-28
+  kind: PhD forum
+  event: Machine Learning and Data Science PhD Forum (No. 48), Peking University
+  slides: /assets/pdf/slides/2023PrivacyAmplification.pdf

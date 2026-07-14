@@ -7,8 +7,12 @@ first_name: Xiang
 middle_name: 
 last_name: Li
 email: lx10077@upenn.edu
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Xiang Li's personal homepage
+role: Incoming Assistant Professor of Statistics
+institution: Rutgers University
+current_role: Postdoctoral Researcher in Statistics
+current_institution: University of Pennsylvania
+tagline: Statistical foundations for reliable AI and modern learning systems.
+description: "Xiang Li's personal homepage"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -47,11 +51,11 @@ rss_icon: false
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
+navbar_fixed: false
+footer_fixed: false
 
 # Dimensions
-max_width: 1000px
+max_width: 1120px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -156,23 +160,6 @@ disqus_shortname: al-folio # put your disqus shortname
 #     rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
-
-collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
-    
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
-
-# -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
 
@@ -203,18 +190,11 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
-  - jekyll-diagrams
-  - jekyll-email-protect
-  - jekyll-feed
   - jekyll-imagemagick
   - jekyll-minifier
-  - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-link-attributes
-  - jekyll-twitter-plugin
-  - jemoji
 
 # Sitemap settings
 defaults:
@@ -339,8 +319,8 @@ enable_google_analytics:    false  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arangement
-enable_math:                true   # enables math typesetting (uses MathJax)
+enable_masonry:             false  # no masonry-based project grid is currently published
+enable_math:                false  # current pages do not require MathJax
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            false  # enables switching between light/dark modes
@@ -349,7 +329,7 @@ enable_navbar_social:       false  # enables displaying social links in the
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
-enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar:         false  # keeps the interface quiet and editorial
 
 # -----------------------------------------------------------------------------
 # Library versions
