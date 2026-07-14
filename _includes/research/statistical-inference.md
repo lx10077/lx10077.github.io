@@ -11,11 +11,11 @@ My recent work explores these ideas in a range of settings, including local SGD 
 - **Convergence and Inference of Stream SGD, with Applications to Queueing Systems and Inventory Control**  
   **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026.
 - **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**  
-  **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2302.07690*, 2023.
+  **X. Li**, J. Liang, and Z. Zhang. *Technical report, arXiv preprint arXiv:2302.07690*, 2023.
 - **Asymptotic Behaviors of Projected Stochastic Approximation: A Jump Diffusion Perspective**  
   J. Liang, Y. Han, **X. Li**, and Z. Zhang. *NeurIPS*, 2022 (Spotlight).
 - **Decoupled Functional Central Limit Theorems for Two-Time-Scale Stochastic Approximation**  
-  Y. Han, **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2412.17070*, 2024.
+  Y. Han, **X. Li**, J. Liang, and Z. Zhang. *Mathematics of Operations Research*, 2026.
 - **Finite-Time Decoupled Convergence in Nonlinear Two-Time-Scale Stochastic Approximation**  
   Y. Han, **X. Li**, and Z. Zhang. *Journal of Machine Learning Research*, 2026.
 - **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
