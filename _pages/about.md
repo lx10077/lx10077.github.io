@@ -15,11 +15,15 @@ site_home: true
   <div class="v3-social" aria-label="Profile links and updates">
     <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
     <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-    <button type="button" data-site-disclosure="featured-papers" aria-controls="featured-papers" aria-expanded="false">Recent / Featured Papers</button>
-    <button type="button" data-site-disclosure="news-panel" aria-controls="news-panel" aria-expanded="false">News</button>
     {% if site.twitter_username %}<a href="https://x.com/{{ site.twitter_username }}">X</a>{% endif %}
+    {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>{% endif %}
     <a href="mailto:{{ site.email }}">Email</a>
     <a href="{{ '/assets/pdf/CV_XiangLi.pdf' | relative_url }}">CV</a>
+  </div>
+
+  <div class="v3-disclosure-actions" aria-label="Expandable homepage sections">
+    <button type="button" data-site-disclosure="featured-papers" aria-controls="featured-papers" aria-expanded="false">Recent / Featured Papers</button>
+    <button type="button" data-site-disclosure="news-panel" aria-controls="news-panel" aria-expanded="false">News</button>
   </div>
 
   <div class="v3-home-disclosures">

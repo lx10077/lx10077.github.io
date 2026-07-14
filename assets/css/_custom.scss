@@ -828,32 +828,50 @@ ul.bibliography {
   text-align: left;
 }
 
-.v3-social > a,
-.v3-social > button {
+.v3-social > a {
   padding: 0;
-  border: 0;
   color: var(--v3-ink);
-  background: transparent;
-  cursor: pointer;
-  font-family: inherit;
   font-size: 0.75rem;
   font-weight: 550;
   line-height: inherit;
 }
 
-.v3-social > a:hover,
-.v3-social > button:hover,
-.v3-social > button[aria-expanded="true"] {
+.v3-social > a:hover {
   color: var(--v3-accent);
 }
 
-.v3-social > button::after {
-  margin-left: 0.28rem;
+.v3-disclosure-actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.15rem;
+}
+
+.v3-disclosure-actions button {
+  margin: 6px 10px 6px 0;
+  padding: 0.58rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--v3-chip);
+  color: var(--v3-ink);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: inherit;
+}
+
+.v3-disclosure-actions button:hover,
+.v3-disclosure-actions button[aria-expanded="true"] {
+  background: var(--v3-chip-hover);
+}
+
+.v3-disclosure-actions button::after {
+  margin-left: 0.35rem;
   color: var(--v3-soft);
   content: "+";
 }
 
-.v3-social > button[aria-expanded="true"]::after {
+.v3-disclosure-actions button[aria-expanded="true"]::after {
   content: "−";
 }
 
@@ -892,8 +910,8 @@ ul.bibliography {
   margin: 0;
   padding: 0.34rem 0;
   color: var(--v3-soft) !important;
-  font-size: 0.64rem;
-  line-height: 1.4;
+  font-size: 0.7rem;
+  line-height: 1.42;
 }
 
 .v3-home-news li + li {
@@ -903,7 +921,7 @@ ul.bibliography {
 .v3-home-news li strong {
   margin-right: 0.35rem;
   color: var(--v3-soft);
-  font-size: 0.57rem;
+  font-size: var(--v3-paper-meta-size);
   font-weight: 650;
   white-space: nowrap;
 }
