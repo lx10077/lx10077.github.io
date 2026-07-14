@@ -813,6 +813,10 @@ ul.bibliography {
   line-height: 1.53;
 }
 
+.v3-profile p a {
+  color: var(--v3-accent);
+}
+
 .v3-social {
   display: flex;
   width: 100%;
@@ -851,27 +855,6 @@ ul.bibliography {
 
 .v3-social > button[aria-expanded="true"]::after {
   content: "−";
-}
-
-.v3-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0.15rem;
-}
-
-.v3-buttons a {
-  margin: 6px 10px 6px 0;
-  padding: 0.58rem 1rem;
-  border-radius: 8px;
-  background: var(--v3-chip);
-  color: var(--v3-ink);
-  font-size: 0.78rem;
-  font-weight: 500;
-}
-
-.v3-buttons a:hover {
-  background: var(--v3-chip-hover);
-  color: var(--v3-ink);
 }
 
 .v3-disclosure-content {
