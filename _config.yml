@@ -287,7 +287,7 @@ external_links:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: true # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # use tracked, pre-optimized images so local and GitHub builds match
   widths:
     - 480
     - 800

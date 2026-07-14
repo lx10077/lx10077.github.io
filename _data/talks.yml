@@ -1,3 +1,15 @@
+- title: "Optimal Detection for Language Watermarks with Pseudorandom Collision"
+  date: 2026-06-02
+  kind: Invited talk
+  event: 9th International Workshop in Sequential Methodologies (IWSM 2026)
+  slides: /assets/pdf/slides/2026IWSM_WatermarkCollision.pdf
+
+- title: "What Can Statistics Offer to Language Models: Watermarking and Evaluation"
+  date: 2026-01-30
+  kind: Job talk
+  event: Rutgers University
+  slides: /assets/pdf/slides/2026Rutgers_JobTalk.pdf
+
 - title: "Statistical Inference in Large Language Models: Language Watermarking, Motivation, Methods & Advances"
   date: 2025-06-15
   kind: Short course

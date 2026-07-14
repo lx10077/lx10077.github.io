@@ -7,7 +7,7 @@ site_home: true
 
 {% capture news_content %}{% include news.md %}{% endcapture %}
 <section class="v3-profile" aria-labelledby="site-name">
-  <img src="{{ '/assets/img/prof_pic-480.webp' | relative_url }}" alt="Portrait of Xiang Li" width="480" height="598" fetchpriority="high">
+  <img src="{{ '/assets/img/prof_pic.webp' | relative_url }}" alt="Portrait of Xiang Li" width="800" height="996" fetchpriority="high">
   <h1 id="site-name">Xiang Li</h1>
   <p>I am a postdoctoral researcher in Statistics at the University of Pennsylvania. My work develops statistical and algorithmic foundations for reliable AI and modern learning systems.</p>
   <p>I will join the Department of Statistics at Rutgers University as an Assistant Professor in September 2026.</p>
@@ -24,8 +24,8 @@ site_home: true
   <div class="v3-buttons" aria-label="Site sections">
     <a href="{{ '/research/' | relative_url }}">Research</a>
     <a href="{{ '/publications/' | relative_url }}">Publications</a>
-    <a href="{{ '/service/' | relative_url }}">Service</a>
     <a href="{{ '/talks/' | relative_url }}">Talks</a>
+    <a href="{{ '/service/' | relative_url }}">Service</a>
   </div>
 
   <div class="v3-home-disclosures">
