@@ -21,6 +21,7 @@
 }
 
 html {
+  font-size: 17px;
   scroll-behavior: smooth;
   scroll-padding-top: 74px;
 }
@@ -698,7 +699,7 @@ ul.bibliography {
   color: var(--v3-ink);
   background: var(--v3-bg);
   font-family: var(--site-font);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.48;
   -webkit-font-smoothing: antialiased;
 }
@@ -756,7 +757,7 @@ ul.bibliography {
 
 .v3-main {
   width: calc(100% - 48px);
-  max-width: 720px;
+  max-width: 780px;
   min-height: calc(100vh - 114px);
   margin: 0 auto;
   padding: 24px 0;
@@ -796,7 +797,7 @@ ul.bibliography {
 }
 
 .v3-profile p {
-  max-width: 700px;
+  max-width: 760px;
   margin: 0;
   color: var(--v3-soft);
   font-size: 0.91rem;
