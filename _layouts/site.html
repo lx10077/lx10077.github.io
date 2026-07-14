@@ -26,6 +26,7 @@
 
     <footer class="v3-footer">
       <div>© {{ site.time | date: '%Y' }} Xiang Li</div>
+      <div class="v3-last-edited">Last edited: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time></div>
     </footer>
 
     {% include scripts/jquery.html %}

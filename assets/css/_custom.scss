@@ -21,7 +21,7 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 19px;
   scroll-behavior: smooth;
   scroll-padding-top: 74px;
 }
@@ -699,7 +699,7 @@ ul.bibliography {
   color: var(--v3-ink);
   background: var(--v3-bg);
   font-family: var(--site-font);
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.48;
   -webkit-font-smoothing: antialiased;
 }
@@ -930,6 +930,11 @@ ul.bibliography {
   color: var(--v3-soft);
   font-size: 0.68rem;
   text-align: center;
+}
+
+.v3-last-edited {
+  margin-top: 0.18rem;
+  font-size: 0.64rem;
 }
 
 .v3-article {
