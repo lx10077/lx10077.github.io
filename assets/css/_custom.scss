@@ -737,8 +737,9 @@ ul.bibliography {
 }
 
 .v3-logo {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   font-weight: 650;
+  white-space: nowrap;
 }
 
 .v3-menu {
@@ -1223,13 +1224,14 @@ ul.bibliography {
   display: grid;
   grid-template-columns: 76px minmax(0, 1fr);
   gap: 0.8rem;
-  align-items: start;
+  align-items: baseline;
 }
 
 .v3-service-event > span {
   color: var(--v3-soft);
   font-size: var(--v3-paper-meta-size);
   font-weight: 550;
+  line-height: var(--v3-paper-title-leading);
 }
 
 .v3-service-event p {
@@ -1382,7 +1384,11 @@ ul.bibliography {
   }
 
   .v3-menu a {
-    font-size: 0.69rem;
+    font-size: 0.62rem;
+  }
+
+  .v3-logo {
+    font-size: 0.78rem;
   }
 
   .v3-menu a:first-child {
@@ -1431,5 +1437,11 @@ ul.bibliography {
 
   .v3-research-hub-meta {
     grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 360px) {
+  .v3-logo-cn {
+    display: none;
   }
 }
