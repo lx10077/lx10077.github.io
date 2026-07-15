@@ -1,3 +1,4 @@
+- **Aug. 2026** — I will attend the [2026 IMS New Researchers Conference](https://imstat.org/meetings-calendar/2026-new-researchers-conference-nrc-north-america/) and present *Evaluating the Unseen Capabilities: How Many Theorems Do LLMs Know?* at [JSM 2026](https://ww2.amstat.org/meetings/jsm/2026/). Looking forward to connecting!
 - **Jul. 2026** — *Selective Disclosure Watermarking for Large Language Models* was accepted to ICML 2026. [arXiv](https://arxiv.org/abs/2607.05353)
 - **Mar. 2026** — I will present *Optimal Detection for Language Watermarks with Pseudorandom Collisions* at ENAR, IWSM, and ICSA.
 - **Nov. 2025** — I gave an [SDLS webinar](https://www.eventbrite.com/e/llm-training-and-coding-for-statistical-learning-and-data-science-tickets-1894442511549?aff=oddtdtcreator) on LLM API usage and watermarking. [Slides]({{ '/assets/pdf/slides/2025SDLS_watermark_webinar.pdf' | relative_url }})
