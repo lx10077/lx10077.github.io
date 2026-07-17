@@ -4,3 +4,5 @@ In online decision-making systems, the main objective is to sequentially maximiz
   **X. Li** and Q. Sun. *Transactions on Machine Learning Research*, 2024.
 - **Corruption-Robust Variance-Aware Algorithms for Generalized Linear Bandits under Heavy-Tailed Rewards**  
   Q. Yu, E. Baek, **X. Li**, and Q. Sun. *UAI*, 2025.
+- **Finding Near Optimal Policies via Reducive Regularization in Markov Decision Processes**<br>
+  W. Yang, **X. Li**, G. Xie, and Z. Zhang. *Workshop on Reinforcement Learning Theory, ICML*, 2021.

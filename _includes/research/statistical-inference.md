@@ -20,3 +20,5 @@ My work explores these ideas in a range of settings, including local SGD in fede
   Y. Han, **X. Li**, and Z. Zhang. *Journal of Machine Learning Research*, 2026.
 - **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
   **X. Li**, S. Wang, and Z. Zhang. *AAAI*, 2020.
+- **Statistical Analysis of Karcher Means for Random Restricted PSD Matrices**<br>
+  H. Chen, **X. Li**, and Q. Sun. *AISTATS*, 2023.
