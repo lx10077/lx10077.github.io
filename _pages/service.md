@@ -19,6 +19,7 @@ site_section: service
   <section>
     <h2>Journal reviewing</h2>
     <ul class="v3-service-list">
+      <li>Statistical Learning and Data Science</li>
       <li>Journal of Machine Learning Research</li>
       <li>Transactions on Machine Learning Research</li>
       <li>Annals of Statistics</li>

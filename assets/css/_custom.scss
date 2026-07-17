@@ -1196,15 +1196,17 @@ ul.bibliography {
 
 /* Version 3 service and talks */
 .v3-service-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.35rem 1.6rem;
+  column-count: 2;
+  column-gap: 2rem;
   margin: 0.6rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .v3-service-list li {
+  margin: 0 0 0.36rem;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
   color: var(--v3-soft);
   font-size: var(--v3-paper-title-size);
   line-height: var(--v3-paper-title-leading);
@@ -1424,7 +1426,7 @@ ul.bibliography {
   }
 
   .v3-service-list {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 
   .v3-service-event {
