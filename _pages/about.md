@@ -9,7 +9,7 @@ site_home: true
 <section class="v3-profile" aria-labelledby="site-name">
   <img src="{{ '/assets/img/prof_pic.webp' | relative_url }}" alt="Portrait of Xiang Li" width="800" height="996" fetchpriority="high">
   <h1 id="site-name">Xiang Li</h1>
-  <p>I am a postdoctoral researcher at the University of Pennsylvania. I will join the <a href="https://statistics.rutgers.edu/">Department of Statistics</a> at Rutgers University as an Assistant Professor in January 2027.</p>
+  <p>I am currently a postdoctoral researcher at the University of Pennsylvania, working with <a href="https://www.weijie-su.com/">Weijie J. Su</a> and <a href="https://www.med.upenn.edu/apps/faculty/index.php/g20001140/p8939931">Qi Long</a>. I received my B.S. and Ph.D. in Statistics from Peking University, where I was advised by <a href="https://math.pku.edu.cn/teachers/zhzhang/">Zhihua Zhang</a>. I will join the <a href="https://statistics.rutgers.edu/">Department of Statistics</a> at Rutgers University as an Assistant Professor in January 2027.</p>
   <p>My research lies at the intersection of statistics, optimization, and machine learning. I develop statistical and algorithmic foundations for reliable AI, with current work on statistical watermarking for tracing and verifying AI-generated content and on methods for evaluating what large language models know. I also study statistical inference for learning algorithms, federated learning, and online decision-making.</p>
 
   <div class="v3-social" aria-label="Profile links and updates">

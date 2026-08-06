@@ -23,9 +23,10 @@
   slides: /assets/pdf/slides/2025ICSA_proportion.pdf
 
 - title: "Evaluating the Unseen Capabilities: How Much Do LLMs Actually Know?"
-  date: 2025-08-21
-  kind: Research talk
-  slides: /assets/pdf/slides/2025GM_unseen.pdf
+  date: 2026-08-04
+  kind: Conference talk
+  event: Joint Statistical Meetings (JSM 2026)
+  slides: /assets/pdf/slides/2026JSM_UnseenCapabilities.pdf
 
 - title: "On the Convergence of FedAvg on Non-IID Data"
   date: 2020-01-01
