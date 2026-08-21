@@ -16,6 +16,8 @@ Guided by this perspective, my work studies how generative AI systems can be mad
   Y. Xie, **X. Li**, T. Mallick, W. J. Su, and R. Zhang. *Journal of the American Statistical Association*, 2025.
 - **Optimal Estimation of Watermark Proportions in Hybrid AI-Human Texts**  
   **X. Li**, G. G. Wen, W. He, J. Wu, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.22343*, 2025.
+- **Optimal Watermark Localization in Mixed-Source Large Language Model Texts**<br>
+  J. H. Blanchet, T. T. Cai, **X. Li**, H. Liu, Q. Long, and W. J. Su (Alphabetical). *arXiv preprint arXiv:2608.14906*, 2026.
 - **Improving the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models**  
   W. He\*, **X. Li**\*, L. Shen, W. J. Su, and Q. Long. *ICLR*, 2026.
 - **Selective Disclosure Watermarking for Large Language Models**  
