@@ -4,11 +4,11 @@
 
 "Cai":
   - firstname: ["T. Tony"]
-    url: http://www-stat.wharton.upenn.edu/~tcai/
+    url: https://tony-cai.com/
 
 "Chang":
   - firstname: ["Xiangyu"]
-    url: http://xiangyuchang.github.io/
+    url: https://xiangyuchang.github.io/
 
 "Chen":
   - firstname: ["Xinyun"]
@@ -16,7 +16,7 @@
 
 "Jordan":
   - firstname: ["Michael I"]
-    url: http://people.eecs.berkeley.edu/~jordan/
+    url: https://ieor.berkeley.edu/people/michael-jordan/
 
 "Liang":
   - firstname: ["Jiadong"]
@@ -50,7 +50,7 @@
 
 "Wang":
   - firstname: ["Shusen"]
-    url: http://wangshusen.github.io/
+    url: https://wangshusen.github.io/
   - firstname: ["Chendi"]
     url: https://sites.google.com/view/chendiwang
   - firstname: ["Huiyuan"]
