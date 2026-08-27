@@ -1,3 +1,7 @@
+"Blanchet":
+  - firstname: ["Jose H."]
+    url: https://joseblanchet.com/
+
 "Cai":
   - firstname: ["T. Tony"]
     url: http://www-stat.wharton.upenn.edu/~tcai/
@@ -23,6 +27,8 @@
     url: https://www.med.upenn.edu/long-lab/
 
 "Su":
+  - firstname: ["Buxin"]
+    url: https://buxinsu.github.io/index.html
   - firstname: ["Weijie J."]
     url: https://www.weijie-su.com/
 
