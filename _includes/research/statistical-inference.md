@@ -6,8 +6,6 @@ My work explores these ideas in a range of settings, including local SGD in fede
 
 ###### Stochastic Approximation
 
-- **A Statistical Analysis of Polyak-Ruppert Averaged Q-Learning**  
-  **X. Li**, W. Yang, J. Liang, Z. Zhang, and M. I. Jordan. *AISTATS*, 2023.
 - **Convergence and Inference of Stream SGD, with Applications to Queueing Systems and Inventory Control**  
   **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026.
 - **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**  
@@ -22,3 +20,12 @@ My work explores these ideas in a range of settings, including local SGD in fede
   **X. Li**, S. Wang, and Z. Zhang. *AAAI*, 2020.
 - **Statistical Analysis of Karcher Means for Random Restricted PSD Matrices**<br>
   H. Chen, **X. Li**, and Q. Sun. *AISTATS*, 2023.
+
+###### Reinforcement Learning
+
+- **A Statistical Analysis of Polyak-Ruppert Averaged Q-Learning**<br>
+  **X. Li**, W. Yang, J. Liang, Z. Zhang, and M. I. Jordan. *AISTATS*, 2023.
+- **A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning**<br>
+  Z. Cheng, **X. Li**, Y. Peng, and Z. Zhang. *arXiv preprint arXiv:2608.27313*, 2026.
+- **Finding Near Optimal Policies via Reducive Regularization in Markov Decision Processes**<br>
+  W. Yang, **X. Li**, G. Xie, and Z. Zhang. *Workshop on Reinforcement Learning Theory, ICML*, 2021.
