@@ -25,8 +25,8 @@ Guided by this perspective, my work studies how generative AI systems can be mad
 
 ###### AI Content Detection
 
-- **Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Texts**  
-  L. Liang and **X. Li**. *arXiv preprint arXiv:2605.12890*, 2026.
+- **Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Text**<br>
+  L. Liang and **X. Li**. *NeurIPS*, 2026.
 - **Robust Spectral Watermark for Synthetic Tabular Data**  
   Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su. *Statistical Learning and Data Science*, 2026.
 
@@ -36,3 +36,8 @@ Guided by this perspective, my work studies how generative AI systems can be mad
   **X. Li**, J. Xin, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.02058*, 2025.
 - **UCS: Estimating Unseen Coverage for Improved In-Context Learning**  
   J. Xin, **X. Li**, E. Qiang, W. He, T. Shang, W. J. Su, and Q. Long. *Findings of ACL*, 2026.
+
+###### Uncertainty Quantification
+
+- **Conformal Prediction with Paraphrase-Aware Scoring for LLM Uncertainty Quantification**<br>
+  J. Xin, E. Qiang, Z. Zhu, **X. Li**, W. J. Su, and Q. Long. *NeurIPS*, 2026.

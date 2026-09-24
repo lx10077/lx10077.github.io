@@ -12,6 +12,11 @@ site_section: service
   </header>
 
   <section>
+    <h2>Area Chair</h2>
+    <p class="v3-inline-list">ICLR 2027</p>
+  </section>
+
+  <section>
     <h2>Conference reviewing</h2>
     <p class="v3-inline-list">NeurIPS · ICML · ICLR · UAI · AISTATS · IJCAI · AAAI</p>
   </section>
