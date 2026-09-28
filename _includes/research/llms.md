@@ -26,7 +26,7 @@ Guided by this perspective, my work studies how generative AI systems can be mad
 ###### AI Content Detection
 
 - **Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Text**<br>
-  L. Liang and **X. Li**. *NeurIPS*, 2026.
+  L. Liang and **X. Li**. *NeurIPS*, 2026. [Code](https://github.com/LuxLiang/steer-to-detect-release/tree/main)
 - **Robust Spectral Watermark for Synthetic Tabular Data**  
   Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su. *Statistical Learning and Data Science*, 2026.
 
