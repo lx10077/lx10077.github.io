@@ -10,6 +10,8 @@ My work explores these ideas in a range of settings, including local SGD in fede
   **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026.
 - **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**  
   **X. Li**, J. Liang, and Z. Zhang. *Technical report, arXiv preprint arXiv:2302.07690*, 2023.
+- **Weak Convergence Rates for Partial-Sum Processes of Nonlinear Stochastic Approximation**<br>
+  **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2609.40338*, 2026.
 - **Asymptotic Behaviors of Projected Stochastic Approximation: A Jump Diffusion Perspective**  
   J. Liang, Y. Han, **X. Li**, and Z. Zhang. *NeurIPS*, 2022 (Spotlight).
 - **Decoupled Functional Central Limit Theorems for Two-Time-Scale Stochastic Approximation**  
