@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 150" preserveAspectRatio="xMidYMid meet" fill="none" stroke="#617da2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m25 75 48-37 51-18M73 38l51 19M25 75h48l51 20M73 75l51-18M25 75l48 37 51 19" stroke="#c3cfdd"/>
+  <path d="M25 75h48l51-18h27" stroke-width="2.5"/>
+  <g fill="#fff">
+    <circle cx="73" cy="38" r="10"/>
+    <circle cx="73" cy="112" r="10"/>
+  </g>
+  <g fill="#e3ebf4">
+    <circle cx="25" cy="75" r="11"/>
+    <circle cx="73" cy="75" r="11"/>
+    <circle cx="124" cy="57" r="10"/>
+  </g>
+  <!-- Arrows within decision nodes indicate the selected action. -->
+  <path d="M20 75h10m-4-4 4 4-4 4M69 79l8-8m-5 0h5v5M69 41l7-7m-5 0h5v5M69 108l7 7m-5 0h5v-5M120 57h8m-3-3 3 3-3 3" stroke-width="1.5"/>
+  <g fill="#fff" stroke="#a5b8cf">
+    <circle cx="124" cy="20" r="5"/>
+    <circle cx="124" cy="95" r="5"/>
+    <circle cx="124" cy="131" r="5"/>
+  </g>
+  <path d="m146 52 5 5-5 5"/>
+</svg>

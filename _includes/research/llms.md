@@ -1,43 +1,47 @@
-Large language models (LLMs) and other generative models have achieved remarkable success, yet fundamental questions about their reliability, interpretability, and safety remain. I view statistics as a principled language for reasoning about data, dependence, and uncertainty, and algorithms as the bridge from these principles to practical learning systems.
+Large language models (LLMs) and other generative models are now used in many settings, but we still need better ways to understand their reliability, interpretability, and safety. Statistics helps us understand what these models learn, how their outputs depend on data and context, and when those outputs can be trusted. Algorithm design turns these insights into methods that work in large-scale generative AI systems.
 
-Guided by this perspective, my work studies how generative AI systems can be made more reliable and better understood. It spans statistical watermarking, model evaluation, uncertainty quantification, and broader questions about their training and behavior.
+<div class="v3-research-topic" markdown="1">
 
 ###### LLM Watermarking
 
+As language models become widely used, it is increasingly difficult to distinguish their output from human-written text. Watermarking addresses this challenge by embedding a detectable statistical signal during generation. It involves both watermark embedding and detection, with an emphasis on robust detection, preserving text quality, and balancing detection power against other design considerations.
+
+- **textGrain: Entropy-Calibrated Watermarking for Language Model Text**<br>
+  **X. Li**, G. G. Wen, X. Chen, Q. Long, A. Jain, F. Joly, M. Lam, Q. Song, and W. J. Su. *Technical report accompanying the OpenAI blog*, 2026. Watermark adopted by OpenAI.
 - **A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency, and Optimal Rules**  
   **X. Li**, F. Ruan, H. Wang, Q. Long, and W. J. Su. *The Annals of Statistics*, 2025.
-- **Optimal Detection for Language Watermarks with Pseudorandom Collision**  
-  T. T. Cai, **X. Li**, Q. Long, W. J. Su, and G. G. Wen (Alphabetical). *arXiv preprint arXiv:2510.22007*, 2025.
 - **Robust Detection of Watermarks in Large Language Models under Human Edits**  
   **X. Li**, F. Ruan, H. Wang, Q. Long, and W. J. Su. *Journal of the Royal Statistical Society: Series B*, 2025.
-- **On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection**  
-  W. He\*, **X. Li**\*, T. Shang, L. Shen, W. J. Su, and Q. Long. *NeurIPS*, 2025 (Spotlight).
-- **Debiasing Watermarks for Large Language Models via Maximal Coupling**  
-  Y. Xie, **X. Li**, T. Mallick, W. J. Su, and R. Zhang. *Journal of the American Statistical Association*, 2025.
-- **Optimal Estimation of Watermark Proportions in Hybrid AI-Human Texts**  
-  **X. Li**, G. G. Wen, W. He, J. Wu, Q. Long, and W. J. Su. Minor revision at *Journal of the American Statistical Association*.
-- **Optimal Watermark Localization in Mixed-Source Large Language Model Texts**<br>
-  J. H. Blanchet, T. T. Cai, **X. Li**, H. Liu, Q. Long, and W. J. Su (Alphabetical). *arXiv preprint arXiv:2608.14906*, 2026.
-- **Improving the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models**  
-  W. He\*, **X. Li**\*, L. Shen, W. J. Su, and Q. Long. *ICLR*, 2026.
-- **Selective Disclosure Watermarking for Large Language Models**  
-  X. Chen, **X. Li**, Y. Xie, and Q. Long. *ICML*, 2026.
 
-###### AI Content Detection
 
-- **Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Text**<br>
-  L. Liang and **X. Li**. *NeurIPS*, 2026.
-- **Robust Spectral Watermark for Synthetic Tabular Data**  
-  Y. Zhao, **X. Li**, P. Song, Q. Long, and W. J. Su. *Statistical Learning and Data Science*, 2026.
+<p class="v3-research-card-link"><a href="{{ '/publications/' | relative_url }}?topic=watermark">All LLM watermarking papers →</a></p>
+
+</div>
+
+<div class="v3-research-topic" markdown="1">
 
 ###### LLM Evaluation
 
+A finite collection of prompts and responses reveals only part of what an LLM can do. To draw broader conclusions, an evaluation must account for factors we observe as well as those we do not. Statistical tools can help us understand these complex systems better and clarify the limits of what an evaluation can reveal.
+
 - **Evaluating the Unseen Capabilities: How Many Theorems Do LLMs Know?**  
   **X. Li**, J. Xin, Q. Long, and W. J. Su. *arXiv preprint arXiv:2506.02058*, 2025.
-- **UCS: Estimating Unseen Coverage for Improved In-Context Learning**  
-  J. Xin, **X. Li**, E. Qiang, W. He, T. Shang, W. J. Su, and Q. Long. *Findings of ACL*, 2026.
 
-###### Uncertainty Quantification
 
-- **Conformal Prediction with Paraphrase-Aware Scoring for LLM Uncertainty Quantification**<br>
-  J. Xin, E. Qiang, Z. Zhu, **X. Li**, W. J. Su, and Q. Long. *NeurIPS*, 2026.
+<p class="v3-research-card-link"><a href="{{ '/publications/' | relative_url }}?topic=evaluation">All LLM evaluation papers →</a></p>
+
+</div>
+
+<div class="v3-research-topic" markdown="1">
+
+###### AI Content Detection
+
+As AI-generated content becomes more common across text, images, video, and other modalities, understanding its origin becomes increasingly important. The problem is to find evidence that can distinguish human-created from machine-generated content. A statistical approach asks which signals are informative and how they can support reliable judgments.
+
+- **Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Text**<br>
+  L. Liang and **X. Li**. *NeurIPS*, 2026.
+
+
+<p class="v3-research-card-link"><a href="{{ '/publications/' | relative_url }}?topic=detection">All AI content detection papers →</a></p>
+
+</div>

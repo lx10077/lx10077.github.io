@@ -1,33 +1,29 @@
-When adaptive optimization algorithms are used to compute optimal solutions, an important question is how to characterize their convergence behavior and how to equip the resulting solutions with valid and computationally efficient confidence intervals. My research studies algorithmic inference by viewing learning algorithms as stochastic processes and leveraging their convergence dynamics and gradient noise for statistical inference.
+Many learning algorithms update their estimates using noisy observations. Stochastic approximation provides a general framework for studying these iterative procedures. The analysis becomes especially challenging when observations are dependent, updates interact across multiple time scales, or the update rule creates complex dynamics.
 
-A key theme is that carefully designed gradient estimators or algorithms can endow learned solutions with desirable statistical properties (such as valid uncertainty quantification, robustness, privacy, or fairness) without sacrificing computational efficiency. In particular, algorithmic randomness and gradient noise can be explicitly exploited to construct confidence intervals and enable principled statistical inference, offering a convenient pathway for understanding uncertainty in modern learning systems.
+<div class="v3-research-topic" markdown="1">
 
-My work explores these ideas in a range of settings, including local SGD in federated learning, Q-learning in reinforcement learning, and operations research problems such as queueing systems and inventory control.
+###### Convergence Analysis
 
-###### Stochastic Approximation
+Convergence analysis evaluates how quickly noisy updates approach a target solution and how their errors behave along the way. These questions can be studied from two complementary perspectives: finite-sample bounds quantify the accuracy of individual iterates after a given number of updates, while asymptotic stochastic-process limits describe how errors accumulate and evolve over time.
 
-- **Convergence and Inference of Stream SGD, with Applications to Queueing Systems and Inventory Control**  
-  **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026.
-- **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**  
-  **X. Li**, J. Liang, and Z. Zhang. *Technical report, arXiv preprint arXiv:2302.07690*, 2023.
 - **Weak Convergence Rates for Partial-Sum Processes of Nonlinear Stochastic Approximation**<br>
   **X. Li**, J. Liang, and Z. Zhang. *arXiv preprint arXiv:2609.40338*, 2026.
-- **Asymptotic Behaviors of Projected Stochastic Approximation: A Jump Diffusion Perspective**  
-  J. Liang, Y. Han, **X. Li**, and Z. Zhang. *NeurIPS*, 2022 (Spotlight).
-- **Decoupled Functional Central Limit Theorems for Two-Time-Scale Stochastic Approximation**  
-  Y. Han, **X. Li**, J. Liang, and Z. Zhang. *Mathematics of Operations Research*, 2026.
-- **Finite-Time Decoupled Convergence in Nonlinear Two-Time-Scale Stochastic Approximation**  
-  Y. Han, **X. Li**, and Z. Zhang. *Journal of Machine Learning Research*, 2026.
-- **Do Subsampled Newton Methods Work for High-Dimensional Data?**  
-  **X. Li**, S. Wang, and Z. Zhang. *AAAI*, 2020.
-- **Statistical Analysis of Karcher Means for Random Restricted PSD Matrices**<br>
-  H. Chen, **X. Li**, and Q. Sun. *AISTATS*, 2023.
+- **Convergence and Inference of Stream SGD, with Applications to Queueing Systems and Inventory Control**<br>
+  **X. Li**\*, J. Liang\*, X. Chen, and Z. Zhang. *Operations Research*, 2026.
 
-###### Reinforcement Learning
+<p class="v3-research-card-link"><a href="{{ '/publications/' | relative_url }}?topic=stochastic">All stochastic approximation papers →</a></p>
 
-- **A Statistical Analysis of Polyak-Ruppert Averaged Q-Learning**<br>
-  **X. Li**, W. Yang, J. Liang, Z. Zhang, and M. I. Jordan. *AISTATS*, 2023.
-- **A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning**<br>
-  Z. Cheng, **X. Li**, Y. Peng, and Z. Zhang. *arXiv preprint arXiv:2608.27313*, 2026.
-- **Finding Near Optimal Policies via Reducive Regularization in Markov Decision Processes**<br>
-  W. Yang, **X. Li**, G. Xie, and Z. Zhang. *Workshop on Reinforcement Learning Theory, ICML*, 2021.
+</div>
+
+<div class="v3-research-topic" markdown="1">
+
+###### Statistical Inference
+
+A convergent estimate alone does not tell us how much uncertainty remains. Statistical inference uses the fluctuations along an algorithm’s trajectory to construct confidence intervals and assess uncertainty. The challenge is to obtain valid guarantees while accounting for dependent observations and the (possibly changing) estimates produced by the algorithm.
+
+- **Online Statistical Inference for Nonlinear Stochastic Approximation with Markovian Data**<br>
+  **X. Li**, J. Liang, and Z. Zhang. *Technical report, arXiv preprint arXiv:2302.07690*, 2023.
+
+<p class="v3-research-card-link"><a href="{{ '/publications/' | relative_url }}?topic=inference">All statistical inference papers →</a></p>
+
+</div>
