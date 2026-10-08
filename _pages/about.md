@@ -13,7 +13,7 @@ site_home: true
   <p>My research interests lie at the intersection of statistics, optimization, machine learning, and AI. My current research focuses on the theoretical foundations of generative AI, including text watermarking and LLM evaluation, as well as convergence and statistical inference for stochastic approximation. My earlier work includes federated learning with heterogeneous data and decision-making under uncertainty.</p>
   <p>At a broader level, my work combines statistical thinking with algorithm design to understand the behavior, reliability, and uncertainty of learning systems.</p>
 
-  <p class="v3-student-note"><strong>Prospective students (Fall 2027).</strong> I expect to recruit PhD students at Rutgers for Fall 2027. If you are interested in statistical foundations of AI, machine learning, or optimization, please <a href="mailto:{{ site.email }}">email me</a> with a brief introduction and your research interests.</p>
+  <p class="v3-student-note"><strong>Prospective students (Fall 2027).</strong> I expect to recruit PhD students at Rutgers for Fall 2027. PhD admissions decisions are generally made by the departmental admissions committee. If you are interested in working with me, please <a href="mailto:{{ site.email }}">email me</a> with a brief introduction, your CV, and the research projects you are interested in.</p>
 
   <div class="v3-social" aria-label="Profile links and updates">
     <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
