@@ -45,6 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
   buttons.forEach(button => button.addEventListener("click", () => {
     const wasBelowListStart = root.getBoundingClientRect().top < 70;
     filter(button.dataset.topic);
+    root.classList.remove("is-revealing");
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      // Restart the short fade when the visitor selects another topic.
+      void root.offsetWidth;
+      root.classList.add("is-revealing");
+    }
     if (!wideScreen.matches) toggle.focus({ preventScroll: true });
     if (wasBelowListStart) root.scrollIntoView({ block: "start" });
     const url = new URL(window.location.href);

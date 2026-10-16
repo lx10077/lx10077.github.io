@@ -486,7 +486,7 @@ ul.bibliography {
   justify-content: flex-end;
 }
 
-.title-links a.pub-link {
+.title-links .pub-link {
   color: var(--v1-blue-dark) !important;
   font-size: 0.62rem;
   font-weight: 500;
@@ -899,10 +899,8 @@ ul.bibliography {
 }
 
 .v3-home-news ul {
-  max-height: 18rem;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
   list-style: none;
 }
 
@@ -1173,7 +1171,7 @@ ul.bibliography {
   line-height: var(--v3-paper-title-leading);
 }
 
-.v3-publications .title-links a.pub-link {
+.v3-publications .title-links .pub-link {
   color: var(--v3-accent) !important;
   font-size: 0.64rem;
 }
@@ -1837,4 +1835,419 @@ ul.bibliography {
   .v3-research-keyword-line + .v3-research-keyword-line::before {
     content: "· ";
   }
+}
+
+/* Small interaction cues, with no continuous motion or layout shifts. */
+.v3-body a,
+.v3-body button {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+.v3-menu a::after {
+  transition: background-color 180ms ease;
+}
+.v3-menu-icon::before,
+.v3-menu-icon::after {
+  transition: transform 250ms ease, top 250ms ease, bottom 250ms ease;
+}
+.v3-body a:focus-visible,
+.v3-body button:focus-visible {
+  outline: 2px solid var(--v3-accent);
+  outline-offset: 3px;
+}
+.v3-home-news li[hidden] { display: none !important; }
+.v3-news-toggle {
+  padding: 0.4rem 0;
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--v3-accent);
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+.v3-news-toggle:hover { color: var(--v3-ink); }
+.v3-art-packet { opacity: 0; }
+
+@keyframes research-draw {
+  from { stroke-dasharray: 1; stroke-dashoffset: 1; }
+  to { stroke-dasharray: 1; stroke-dashoffset: 0; }
+}
+@keyframes research-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes research-node {
+  0%, 100% { fill: #e3ebf4; }
+  45% { fill: #9bb2ce; }
+}
+@keyframes research-packet {
+  0% { opacity: 0; transform: translate(var(--packet-x), var(--packet-y)); }
+  12%, 38% { opacity: 1; }
+  45%, 55% { opacity: 0; transform: translate(0, 0); }
+  62%, 88% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--packet-x), var(--packet-y)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .v3-research-hub > a:focus-visible .v3-art-draw { animation: research-draw 900ms ease both; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:focus-visible .v3-art-reveal { animation: research-reveal 400ms ease both; animation-delay: var(--art-delay, 600ms); }
+  .v3-research-hub > a:focus-visible .v3-art-node { animation: research-node 650ms ease; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:focus-visible .v3-art-packet { animation: research-packet 1800ms ease both; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .v3-research-hub > a:hover .v3-art-draw { animation: research-draw 900ms ease both; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:hover .v3-art-reveal { animation: research-reveal 400ms ease both; animation-delay: var(--art-delay, 600ms); }
+  .v3-research-hub > a:hover .v3-art-node { animation: research-node 650ms ease; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:hover .v3-art-packet { animation: research-packet 1800ms ease both; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .v3-body *, .v3-body *::before, .v3-body *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Native buttons retain the compact publication-link appearance. */
+.title-links button.pub-link {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.pub-detail-panel[hidden] { display: none !important; }
+.pub-detail-panel:not([hidden]) { margin-top: 0.7rem; }
+
+/* Navigation underline and compact-menu entrance/exit. */
+.v3-menu a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0.35rem;
+  left: 0;
+  height: 2px;
+  background: var(--v3-accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+.v3-menu a.active::after,
+.v3-menu a:hover::after,
+.v3-menu a:focus-visible::after { transform: scaleX(1); }
+
+.v3-nav.is-compact:not(.is-measuring) .v3-menu {
+  position: absolute;
+  top: calc(100% + 7px);
+  right: 12px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  min-width: 205px;
+  max-width: calc(100% - 24px);
+  gap: 3px;
+  padding: 6px;
+  border: 1px solid var(--v3-rule);
+  border-radius: 12px;
+  background: var(--v3-bg);
+  box-shadow: 0 10px 30px rgba(32, 33, 36, 0.1), 0 2px 6px rgba(32, 33, 36, 0.04);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 250ms ease, transform 250ms ease, visibility 0s linear 250ms;
+}
+.v3-nav.is-compact.is-open:not(.is-measuring) .v3-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+.v3-nav.is-compact .v3-menu a::after { display: none; }
+
+/* Consistent feedback for text actions and selection controls. */
+.v3-news-toggle,
+.v3-body .title-links button.pub-link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+.v3-news-toggle:hover,
+.v3-news-toggle:focus-visible,
+.v3-body .title-links button.pub-link:hover,
+.v3-body .title-links button.pub-link:focus-visible {
+  text-decoration-color: currentColor;
+}
+.v3-body .title-links button.pub-link[aria-expanded="true"] {
+  text-decoration-color: currentColor;
+}
+.v3-topic-options button:hover,
+.v3-topic-options button:focus-visible {
+  color: var(--v3-accent);
+  background-color: var(--v3-header);
+}
+.v3-topic-filters .v3-topic-toggle:hover,
+.v3-topic-filters .v3-topic-toggle:focus-visible,
+.v3-topic-filters .v3-topic-toggle[aria-expanded="true"],
+.v3-menu-toggle:focus-visible {
+  color: var(--v3-accent);
+  border-color: var(--v3-chip-hover);
+  background-color: #edf1f6;
+}
+.v3-body button:active { color: var(--v3-ink); }
+
+/* Topic dropdown uses the same motion as the compact navigation menu. */
+@media (max-width: 999px) {
+  .v3-topic-filters .v3-topic-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    max-width: 100%;
+    max-height: min(65vh, 460px);
+    overflow-y: auto;
+    padding: 6px;
+    border: 1px solid var(--v3-rule);
+    border-radius: 12px;
+    background: var(--v3-bg);
+    box-shadow: 0 10px 30px rgba(32, 33, 36, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 250ms ease, transform 250ms ease, visibility 0s linear 250ms;
+  }
+  .v3-topic-filters.is-open .v3-topic-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+}
+
+/* Match the Topic label to the Menu button weight. */
+.v3-topic-label { font-weight: 500; }
+
+/* Shared appearance for navigation and publication-topic menus. */
+.v3-menu-toggle,
+.v3-topic-filters .v3-topic-toggle {
+  align-items: center;
+  gap: 0.45rem;
+  box-sizing: border-box;
+  min-height: 36px;
+  margin: 4px 0;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--v3-rule);
+  border-radius: 8px;
+  background: var(--v3-bg);
+  color: var(--v3-ink);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.48;
+}
+.v3-topic-label { color: inherit; font-weight: inherit; }
+.v3-topic-current { color: var(--v3-accent); font-weight: inherit; }
+.v3-menu-icon { flex: 0 0 14px; }
+.v3-menu-toggle:hover,
+.v3-menu-toggle:focus-visible,
+.v3-menu-toggle[aria-expanded="true"],
+.v3-topic-filters .v3-topic-toggle:hover,
+.v3-topic-filters .v3-topic-toggle:focus-visible,
+.v3-topic-filters .v3-topic-toggle[aria-expanded="true"] {
+  color: var(--v3-accent);
+  border-color: var(--v3-chip-hover);
+  background: #edf1f6;
+}
+@media (max-width: 999px) {
+  .v3-topic-filters .v3-topic-options {
+    top: calc(100% + 7px);
+    box-sizing: border-box;
+    width: max-content;
+    min-width: 205px;
+    max-width: 100%;
+    gap: 3px;
+    padding: 6px;
+    border: 1px solid var(--v3-rule);
+    border-radius: 12px;
+    background: var(--v3-bg);
+    box-shadow: 0 10px 30px rgba(32, 33, 36, 0.1), 0 2px 6px rgba(32, 33, 36, 0.04);
+  }
+  .v3-topic-options button,
+  .v3-nav.is-compact:not(.is-measuring) .v3-menu a {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 0.45rem 0.7rem;
+    border: 0;
+    border-radius: 7px;
+    color: var(--v3-ink);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.48;
+    text-align: left;
+  }
+  .v3-topic-options button:hover,
+  .v3-topic-options button:focus-visible,
+  .v3-nav.is-compact:not(.is-measuring) .v3-menu a:hover,
+  .v3-nav.is-compact:not(.is-measuring) .v3-menu a:focus-visible {
+    color: var(--v3-accent);
+    background: var(--v3-header);
+  }
+  .v3-topic-options button[aria-pressed="true"],
+  .v3-nav.is-compact:not(.is-measuring) .v3-menu a.active {
+    color: var(--v3-accent);
+    background: #edf1f6;
+  }
+}
+
+/* One-shot illustrations and content reveals. */
+.v3-art-eye { transform-box: fill-box; transform-origin: center; }
+@keyframes research-blink {
+  0%, 35%, 70%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.12); }
+}
+@keyframes research-antenna {
+  0%, 100% { fill: #fff; }
+  45% { fill: #9bb2ce; }
+}
+@keyframes content-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .v3-research-hub > a:focus-visible .v3-art-eye { animation: research-blink 650ms ease; }
+  .v3-research-hub > a:focus-visible .v3-art-antenna { animation: research-antenna 1000ms ease; }
+  .v3-news-revealed { animation: content-reveal 300ms ease both; }
+  #filtered-publications.is-revealing { animation: content-reveal 300ms ease both; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .v3-research-hub > a:hover .v3-art-eye { animation: research-blink 650ms ease; }
+  .v3-research-hub > a:hover .v3-art-antenna { animation: research-antenna 1000ms ease; }
+}
+
+/* Highlight a whole publication without changing its spacing or text alignment. */
+#filtered-publications ol.bibliography > li {
+  border-radius: 8px;
+  transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+#filtered-publications ol.bibliography > li:focus-within {
+  background-color: #f2f5f9;
+  box-shadow: 8px 0 0 #f2f5f9, -8px 0 0 #f2f5f9;
+}
+@media (hover: hover) {
+  #filtered-publications ol.bibliography > li:hover {
+    background-color: #f2f5f9;
+    box-shadow: 8px 0 0 #f2f5f9, -8px 0 0 #f2f5f9;
+  }
+}
+
+/* Mobile keywords appear in sequence without changing inline layout. */
+@media (max-width: 599px) and (prefers-reduced-motion: no-preference) {
+  .v3-research-hub-meta.v3-mobile-revealed .v3-research-keyword-line {
+    animation: content-reveal 450ms ease both;
+  }
+  .v3-mobile-revealed .v3-research-keyword-line:nth-child(2) { animation-delay: 100ms; }
+  .v3-mobile-revealed .v3-research-keyword-line:nth-child(3) { animation-delay: 200ms; }
+}
+
+/* Discovery cues keep publication entries and their spacing unchanged. */
+/* A large translucent arrow overlays the research card on interaction. */
+.v3-card-arrow {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: var(--v3-accent);
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+.v3-research-hub > a:focus-visible .v3-card-arrow {
+  opacity: 0.22;
+  transform: translateX(0);
+}
+@media (hover: hover) {
+  .v3-research-hub > a:hover .v3-card-arrow {
+    opacity: 0.22;
+    transform: translateX(0);
+  }
+}
+@media (hover: none) {
+  .v3-card-arrow { display: none; }
+}
+.v3-body .v3-back-to-top {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 30;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--v3-rule);
+  border-radius: 50%;
+  background: var(--v3-bg);
+  color: var(--v3-accent);
+  font: inherit;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px rgba(32, 33, 36, 0.08);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, background-color 180ms ease, visibility 0s linear 180ms;
+}
+.v3-body .v3-back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+.v3-body .v3-back-to-top:hover { background: var(--v3-header); }
+
+/* Homepage identity layout trial: round portrait and compact affiliation. */
+.v3-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.v3-profile-header > img {
+  flex: 0 0 190px;
+  width: 190px;
+  height: 190px;
+  box-sizing: border-box;
+  border: 1px solid var(--v3-chip);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 39%;
+}
+.v3-profile-identity { min-width: 0; }
+.v3-profile-identity h1 { margin: 0 0 14px; }
+.v3-profile-identity .v3-profile-role {
+  color: var(--v3-ink);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.v3-profile-identity .v3-profile-affiliation {
+  margin-top: 3px;
+  font-size: 0.84rem;
+}
+@media (max-width: 599px) {
+  .v3-profile-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .v3-profile-header > img { flex-basis: auto; width: 126px; height: 126px; }
+  .v3-profile-identity h1 { margin-bottom: 10px; }
 }

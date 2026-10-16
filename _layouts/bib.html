@@ -9,13 +9,13 @@
           <div class="title">{{ entry.title }}</div>
           <div class="title-links">
             {%- if entry.abstract -%}
-              <a class="pub-link" role="button">[Abs]</a>
+              <button class="pub-link" type="button" data-paper-panel="abstract" aria-expanded="false" aria-controls="{{ entry.key }}-abstract">[Abs]</button>
             {%- endif -%}
             {%- if entry.arxiv -%}
               <a class="pub-link" href="https://arxiv.org/abs/{{ entry.arxiv }}">[arXiv]</a>
             {%- endif -%}
             {%- if entry.bibtex_show -%}
-              <a class="pub-link" role="button">[Bib]</a>
+              <button class="pub-link" type="button" data-paper-panel="bibtex" aria-expanded="false" aria-controls="{{ entry.key }}-bibtex">[Bib]</button>
             {%- endif -%}
             {%- if entry.html -%}
               <a class="pub-link" href="{{ entry.html }}">[HTML]</a>
@@ -217,14 +217,14 @@
 
           {% if entry.abstract -%}
           <!-- Hidden abstract block -->
-          <div class="abstract hidden">
+          <div class="abstract pub-detail-panel" id="{{ entry.key }}-abstract" hidden>
             <p>{{ entry.abstract }}</p>
           </div>
           {%- endif -%}
 
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
+          <div class="bibtex pub-detail-panel" id="{{ entry.key }}-bibtex" hidden>
             {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
           </div>
           {%- endif %}

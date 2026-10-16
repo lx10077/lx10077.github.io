@@ -35,6 +35,7 @@
     {% include scripts/misc.html %}
     {% include scripts/mathjax.html %}
     {% if page.topic_filters %}<script defer src="{{ '/assets/js/publication-filters.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>{% endif %}
+    {% if page.research_overview %}<script defer src="{{ '/assets/js/research-motion.js' | relative_url }}"></script>{% endif %}
     {% if page.site_home %}<script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>{% endif %}
   </body>
 </html>

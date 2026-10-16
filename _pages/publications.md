@@ -15,7 +15,7 @@ topic_filters: true
   </header>
 
   <div class="v3-topic-filters" role="group" aria-label="Filter publications by research topic">
-    <button type="button" class="v3-topic-toggle" aria-expanded="false" aria-controls="topic-options">Topic: <span class="v3-topic-current">All</span><span aria-hidden="true">▾</span></button>
+    <button type="button" class="v3-topic-toggle" aria-expanded="false" aria-controls="topic-options"><span class="v3-menu-icon" aria-hidden="true"></span><span class="v3-topic-label">Topic:</span> <span class="v3-topic-current">All</span></button>
     <div class="v3-topic-options" id="topic-options">
     <button type="button" data-topic="all" aria-pressed="true">All</button>
     <button type="button" data-topic="watermark" aria-pressed="false">LLM Watermarking</button>

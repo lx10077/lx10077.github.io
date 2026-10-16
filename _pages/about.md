@@ -7,8 +7,14 @@ site_home: true
 
 {% capture news_content %}{% include news.md %}{% endcapture %}
 <section class="v3-profile" aria-labelledby="site-name">
-  <img src="{{ '/assets/img/prof_pic.webp' | relative_url }}" alt="Portrait of Xiang Li" width="800" height="996" fetchpriority="high">
-  <h1 id="site-name">Xiang Li</h1>
+  <header class="v3-profile-header">
+    <img src="{{ '/assets/img/prof_pic.webp' | relative_url }}" alt="Portrait of Xiang Li" width="800" height="996" fetchpriority="high">
+    <div class="v3-profile-identity">
+      <h1 id="site-name">Xiang Li</h1>
+      <p class="v3-profile-role">Postdoctoral Researcher</p>
+      <p class="v3-profile-affiliation">University of Pennsylvania</p>
+    </div>
+  </header>
   <p>I am currently a postdoctoral researcher at the University of Pennsylvania, working with <a href="https://www.weijie-su.com/">Weijie J. Su</a> and <a href="https://www.med.upenn.edu/apps/faculty/index.php/g20001140/p8939931">Qi Long</a>. I received my B.S. and Ph.D. in Statistics from Peking University, where I was advised by <a href="https://math.pku.edu.cn/teachers/zhzhang/">Zhihua Zhang</a>. I will join the <a href="https://statistics.rutgers.edu/">Department of Statistics</a> at Rutgers University as an Assistant Professor in January 2027.</p>
   <p>My research interests lie at the intersection of statistics, optimization, machine learning, and AI. My current research focuses on the theoretical foundations of generative AI, including text watermarking and LLM evaluation, as well as convergence and statistical inference for stochastic approximation. My earlier work includes federated learning with heterogeneous data and decision-making under uncertainty.</p>
   <p>At a broader level, my work combines statistical thinking with algorithm design to understand the behavior, reliability, and uncertainty of learning systems.</p>
