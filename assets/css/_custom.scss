@@ -1868,36 +1868,38 @@ ul.bibliography {
 .v3-news-toggle:hover { color: var(--v3-ink); }
 .v3-art-packet { opacity: 0; }
 
+/* Two-second cycles include a brief hold after each illustration plays. */
 @keyframes research-draw {
-  from { stroke-dasharray: 1; stroke-dashoffset: 1; }
-  to { stroke-dasharray: 1; stroke-dashoffset: 0; }
+  0% { stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 1; }
+  46%, 94% { stroke-dasharray: 1; stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dasharray: 1; stroke-dashoffset: 0; opacity: 0; }
 }
 @keyframes research-reveal {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  0%, 100% { opacity: 0; }
+  20%, 94% { opacity: 1; }
 }
 @keyframes research-node {
-  0%, 100% { fill: #e3ebf4; }
-  45% { fill: #9bb2ce; }
+  0%, 34%, 100% { fill: #e3ebf4; }
+  16% { fill: #9bb2ce; }
 }
 @keyframes research-packet {
   0% { opacity: 0; transform: translate(var(--packet-x), var(--packet-y)); }
-  12%, 38% { opacity: 1; }
-  45%, 55% { opacity: 0; transform: translate(0, 0); }
-  62%, 88% { opacity: 1; }
-  100% { opacity: 0; transform: translate(var(--packet-x), var(--packet-y)); }
+  12%, 34% { opacity: 1; }
+  42%, 50% { opacity: 0; transform: translate(0, 0); }
+  56%, 80% { opacity: 1; }
+  90%, 100% { opacity: 0; transform: translate(var(--packet-x), var(--packet-y)); }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .v3-research-hub > a:focus-visible .v3-art-draw { animation: research-draw 900ms ease both; animation-delay: var(--art-delay, 0ms); }
-  .v3-research-hub > a:focus-visible .v3-art-reveal { animation: research-reveal 400ms ease both; animation-delay: var(--art-delay, 600ms); }
-  .v3-research-hub > a:focus-visible .v3-art-node { animation: research-node 650ms ease; animation-delay: var(--art-delay, 0ms); }
-  .v3-research-hub > a:focus-visible .v3-art-packet { animation: research-packet 1800ms ease both; }
+  .v3-research-hub > a:focus-visible .v3-art-draw { animation: research-draw 2s ease infinite both; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:focus-visible .v3-art-reveal { animation: research-reveal 2s ease infinite both; animation-delay: var(--art-delay, 600ms); }
+  .v3-research-hub > a:focus-visible .v3-art-node { animation: research-node 2s ease infinite both; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:focus-visible .v3-art-packet { animation: research-packet 2s ease infinite both; }
 }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .v3-research-hub > a:hover .v3-art-draw { animation: research-draw 900ms ease both; animation-delay: var(--art-delay, 0ms); }
-  .v3-research-hub > a:hover .v3-art-reveal { animation: research-reveal 400ms ease both; animation-delay: var(--art-delay, 600ms); }
-  .v3-research-hub > a:hover .v3-art-node { animation: research-node 650ms ease; animation-delay: var(--art-delay, 0ms); }
-  .v3-research-hub > a:hover .v3-art-packet { animation: research-packet 1800ms ease both; }
+  .v3-research-hub > a:hover .v3-art-draw { animation: research-draw 2s ease infinite both; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:hover .v3-art-reveal { animation: research-reveal 2s ease infinite both; animation-delay: var(--art-delay, 600ms); }
+  .v3-research-hub > a:hover .v3-art-node { animation: research-node 2s ease infinite both; animation-delay: var(--art-delay, 0ms); }
+  .v3-research-hub > a:hover .v3-art-packet { animation: research-packet 2s ease infinite both; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -2111,26 +2113,26 @@ ul.bibliography {
 /* One-shot illustrations and content reveals. */
 .v3-art-eye { transform-box: fill-box; transform-origin: center; }
 @keyframes research-blink {
-  0%, 35%, 70%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(0.12); }
+  0%, 12%, 24%, 100% { transform: scaleY(1); }
+  18% { transform: scaleY(0.12); }
 }
 @keyframes research-antenna {
-  0%, 100% { fill: #fff; }
-  45% { fill: #9bb2ce; }
+  0%, 50%, 100% { fill: #fff; }
+  24% { fill: #9bb2ce; }
 }
 @keyframes content-reveal {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .v3-research-hub > a:focus-visible .v3-art-eye { animation: research-blink 650ms ease; }
-  .v3-research-hub > a:focus-visible .v3-art-antenna { animation: research-antenna 1000ms ease; }
+  .v3-research-hub > a:focus-visible .v3-art-eye { animation: research-blink 2s ease infinite both; }
+  .v3-research-hub > a:focus-visible .v3-art-antenna { animation: research-antenna 2s ease infinite both; }
   .v3-news-revealed { animation: content-reveal 300ms ease both; }
   #filtered-publications.is-revealing { animation: content-reveal 300ms ease both; }
 }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .v3-research-hub > a:hover .v3-art-eye { animation: research-blink 650ms ease; }
-  .v3-research-hub > a:hover .v3-art-antenna { animation: research-antenna 1000ms ease; }
+  .v3-research-hub > a:hover .v3-art-eye { animation: research-blink 2s ease infinite both; }
+  .v3-research-hub > a:hover .v3-art-antenna { animation: research-antenna 2s ease infinite both; }
 }
 
 /* Highlight a whole publication without changing its spacing or text alignment. */
@@ -2159,7 +2161,8 @@ ul.bibliography {
 }
 
 /* Discovery cues keep publication entries and their spacing unchanged. */
-/* A large translucent arrow overlays the research card on interaction. */
+/* Center the geometric arrow and contain it within every card size. */
+.v3-research-hub > a { overflow: hidden; }
 .v3-card-arrow {
   position: absolute;
   inset: 0;
@@ -2167,13 +2170,27 @@ ul.bibliography {
   display: grid;
   place-items: center;
   color: var(--v3-accent);
-  font-size: 5rem;
-  font-weight: 400;
-  line-height: 1;
+  min-width: 0;
+  min-height: 0;
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 180ms ease, transform 180ms ease;
   pointer-events: none;
+}
+.v3-card-arrow > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  max-width: 70%;
+  max-height: 80%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .v3-research-hub > a:focus-visible .v3-card-arrow {
   opacity: 0.22;
@@ -2250,4 +2267,34 @@ ul.bibliography {
   .v3-profile-header { flex-direction: column; align-items: flex-start; gap: 16px; }
   .v3-profile-header > img { flex-basis: auto; width: 126px; height: 126px; }
   .v3-profile-identity h1 { margin-bottom: 10px; }
+}
+
+
+/* Equal tracks keep all four research cards the same height at each width. */
+.v3-research-hub { grid-auto-rows: 1fr; }
+.v3-card-arrow { transform: none; transition: opacity 180ms ease; }
+.v3-research-hub > a:focus-visible .v3-card-arrow { transform: none; }
+@media (hover: hover) {
+  .v3-research-hub > a:hover .v3-card-arrow { transform: none; }
+}
+@container research-overview (max-width: 700px) {
+  .v3-research-hub-meta { text-wrap: balance; }
+  .v3-research-keyword-line { display: inline; }
+  .v3-research-keyword-line + .v3-research-keyword-line::before { content: "· "; }
+}
+
+/* The terminal arrow shares the path's cycle, including its reset. */
+@keyframes research-path-tip {
+  0%, 46%, 100% { opacity: 0; }
+  56%, 94% { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .v3-research-hub > a:focus-visible .v3-art-path-tip {
+    animation: research-path-tip 2s ease infinite both;
+  }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .v3-research-hub > a:hover .v3-art-path-tip {
+    animation: research-path-tip 2s ease infinite both;
+  }
 }
