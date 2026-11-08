@@ -13,7 +13,7 @@ site_section: service
 
   <section>
     <h2>Area Chair</h2>
-    <p class="v3-inline-list">ICLR 2027</p>
+    <p class="v3-inline-list">ICLR 2027 · ICML 2027</p>
   </section>
 
   <section>

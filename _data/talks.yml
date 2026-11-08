@@ -1,3 +1,10 @@
+- title: "Language Model Watermarking: Detecting and Designing Statistical Dependence"
+  date: 2026-11-09
+  category: "Seminars & Colloquia"
+  kind: Seminar on Statistics and Data Science
+  event: Department of Mathematics, Hong Kong University of Science and Technology (HKUST)
+  slides: /assets/pdf/slides/2026HKUST_Watermark.pdf
+
 - title: "Optimal Detection for Language Watermarks with Pseudorandom Collision"
   date: 2026-06-02
   category: "Conference Talks"
