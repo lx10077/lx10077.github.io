@@ -1,3 +1,10 @@
+- title: "Stream SGD: Convergence and Statistical Inference for Simulation-Based Decision Problems"
+  date: 2026-11-01
+  date_precision: month
+  category: "Conference Talks"
+  event: SIAM Conference on Mathematics of Data Science (MDS26), Salt Lake City
+  slides: /assets/pdf/slides/2026MDS_SA_Inference.pdf
+
 - title: "Language Model Watermarking: Detecting and Designing Statistical Dependence"
   date: 2026-11-09
   category: "Seminars & Colloquia"
